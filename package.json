@@ -7,7 +7,8 @@
   "scripts": {
     "test": "jest",
     "2020": "ts-node 2020/index.ts",
-    "prettier": "prettier -w 2020/**/*.ts"
+    "2019": "ts-node 2019/index.ts",
+    "prettier": "prettier -w **/*.ts"
   },
   "author": "Matthew Tole <matthewtole@gmail.com>",
   "license": "MIT",
