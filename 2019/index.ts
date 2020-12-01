@@ -2,6 +2,7 @@ import {argv} from 'process';
 
 import * as day01 from './01';
 import * as day02 from './02';
+import * as day03 from './03';
 
 let day = argv[2] ? parseInt(argv[2]) : 0;
 
@@ -21,6 +22,15 @@ const days = [
 
       console.log('Part 1:', day02.part1(data, 12, 2));
       console.log('Part 2:', day02.part2(data, 19690720));
+    });
+  },
+  () => {
+    return day03.parse().then(data => {
+      console.log();
+      console.log(' - DAY 03 - ');
+
+      console.log('Part 1:', day03.part1(data[0], data[1]));
+      console.log('Part 2:', day03.part2(data[0], data[1]));
     });
   },
 ];
