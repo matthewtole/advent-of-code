@@ -1,6 +1,10 @@
 import * as fs from 'fs';
 
 /**
+ * https://adventofcode.com/2019/day/4
+ */
+
+/**
  * Given the paths of two wires, return the Manhattan distance
  * from their closest point of intersection to the point of origin
  */

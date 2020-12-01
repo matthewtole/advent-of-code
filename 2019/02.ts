@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 
 /*
-https://adventofcode.com/2020/day/2
+https://adventofcode.com/2019/day/2
 */
 
 const ADD = 1;
