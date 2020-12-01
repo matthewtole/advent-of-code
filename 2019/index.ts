@@ -19,7 +19,7 @@ const days = [
       console.log();
       console.log(' - DAY 02 - ');
 
-      console.log('Part 1:', day02.runComputer(data, 12, 2));
+      console.log('Part 1:', day02.part1(data, 12, 2));
       console.log('Part 2:', day02.part2(data, 19690720));
     });
   },

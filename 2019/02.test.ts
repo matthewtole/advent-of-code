@@ -19,7 +19,7 @@ describe('Day 02', () => {
   });
 
   test('Part 1', () => {
-    expect(part1([1, 1, 1, 4, 99, 5, 6, 0, 99])).toEqual(30);
+    expect(part1([1, 1, 1, 4, 99, 5, 6, 0, 99], 1, 1)).toEqual(30);
   });
 
   test('Part 2', () => {

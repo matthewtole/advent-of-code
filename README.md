@@ -15,3 +15,4 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
 | 1   | :star: :star: | [2019/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/01.ts) |
+| 2   | :star: :star: | [2019/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/02.ts) |

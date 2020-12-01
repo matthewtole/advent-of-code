@@ -1,5 +1,12 @@
 import * as fs from 'fs';
 
+/*
+https://adventofcode.com/2020/day/1
+*/
+
+/**
+ * Calculate the total fuel needed for a list of masses
+ */
 export const part1 = (input: Array<number>): number => {
   return input.reduce((totalFuel, mass) => {
     const fuel = Math.floor(mass / 3) - 2;
@@ -7,6 +14,10 @@ export const part1 = (input: Array<number>): number => {
   }, 0);
 };
 
+/**
+ * Calculate the total fuel needed for a list of masses,
+ * including the fuel needed for the mass of the fuel.
+ */
 export const part2 = (input: Array<number>): number => {
   return input.reduce((sum, mass) => {
     let totalFuel = 0;
