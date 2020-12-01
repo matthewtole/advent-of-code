@@ -1,0 +1,34 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "My solutions for The Advent of Code",
+  "main": "2020/index.ts",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "2020": "ts-node 2020/index.ts",
+    "prettier": "prettier -w 2020/**/*.ts"
+  },
+  "author": "Matthew Tole <matthewtole@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewtole/advent-of-code.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matthewtole/advent-of-code/issues"
+  },
+  "homepage": "https://github.com/matthewtole/advent-of-code#readme",
+  "dependencies": {
+    "jest": "^26.6.3",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-typescript": "^7.12.7",
+    "@types/jest": "^26.0.15",
+    "babel-jest": "^26.6.3"
+  }
+}
