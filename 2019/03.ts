@@ -100,9 +100,7 @@ export const findIntersectionsWithLength = (
 ): Array<[number, number]> => {
   const intersections: Array<[number, number]> = [];
   points1.map((p1, i1) => {
-    const i2 = points2.findIndex(
-      (p2, i2) => p2[0] === p1[0] && p1[1] === p2[1]
-    );
+    const i2 = points2.findIndex(p2 => p2[0] === p1[0] && p1[1] === p2[1]);
     if (i2 >= 0) {
       intersections.push([i1, i2]);
     }

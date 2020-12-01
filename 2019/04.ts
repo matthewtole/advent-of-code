@@ -2,13 +2,15 @@
  * https://adventofcode.com/2019/day/4
  */
 
+type DigitCount = {[digit: number]: number};
+
 /**
  * Given a range of numbers, return the total number of possible passwords given the rules.
  */
 export const countValidPassswords = (
   min: number,
   max: number,
-  isValidPassword: (number) => boolean
+  isValidPassword: (number: number) => boolean
 ): number => {
   let numPasswords = 0;
   for (let password = min; password <= max; password += 1) {
@@ -38,26 +40,26 @@ const neverDecreases = (digits: Array<number>): boolean => {
 /**
  * Count the number of occurences of each digit in the password
  */
-const countDigits = (digits: Array<number>): {[digit: number]: number} => {
+const countDigits = (digits: Array<number>): DigitCount => {
   return digits.reduce((counts, digit) => {
     return {
       ...counts,
       [digit]: (counts[digit] || 0) + 1,
     };
-  }, {});
+  }, {} as DigitCount);
 };
 
 /**
  * Returns true if there is at least one digit that occurs multiple times
  */
-const hasSomeMatchingDigits = (counts: {[digit: number]: number}): boolean => {
+const hasSomeMatchingDigits = (counts: DigitCount): boolean => {
   return Object.values(counts).some(d => d >= 2);
 };
 
 /**
  * Returns true if there is at least one digit that occurs exactly twice
  */
-const hasSomeDigitPairts = (counts: {[digit: number]: number}): boolean => {
+const hasSomeDigitPairts = (counts: DigitCount): boolean => {
   return Object.values(counts).some(d => d === 2);
 };
 
