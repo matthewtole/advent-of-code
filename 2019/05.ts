@@ -11,7 +11,7 @@ https://adventofcode.com/2019/day/5
  * and returns the value of the first position in memory.
  */
 export const part1 = (program: Array<number>, input: number): number => {
-  return Intcode(program, input);
+  return Intcode(program, [input]);
 };
 
 /**

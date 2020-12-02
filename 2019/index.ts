@@ -6,6 +6,7 @@ import * as day03 from './03';
 import * as day04 from './04';
 import * as day05 from './05';
 import * as day06 from './06';
+import * as day07 from './07';
 
 let day = argv[2] ? parseInt(argv[2]) : 0;
 
@@ -65,6 +66,15 @@ const days = [
 
       console.log('Part 1:', day06.part1(data));
       console.log('Part 2:', day06.part2(data, 'YOU', 'SAN'));
+    });
+  },
+  () => {
+    return day07.parse().then(data => {
+      console.log();
+      console.log(' - DAY 07 - ');
+
+      console.log('Part 1:', day07.solve(data, [0, 1, 2, 3, 4]));
+      console.log('Part 2:', day07.solve(data, [5, 6, 7, 8, 9]));
     });
   },
 ];

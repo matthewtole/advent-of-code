@@ -9,36 +9,36 @@ describe('Intcode', () => {
   });
 
   test('EQUAL', () => {
-    expect(Intcode([3, 9, 8, 9, 10, 9, 4, 9, 99, -1, 8], 8)).toEqual(1);
-    expect(Intcode([3, 9, 8, 9, 10, 9, 4, 9, 99, -1, 8], 0)).toEqual(0);
+    expect(Intcode([3, 9, 8, 9, 10, 9, 4, 9, 99, -1, 8], [8])).toEqual(1);
+    expect(Intcode([3, 9, 8, 9, 10, 9, 4, 9, 99, -1, 8], [0])).toEqual(0);
 
-    expect(Intcode([3, 3, 1108, -1, 8, 3, 4, 3, 99], 8)).toEqual(1);
-    expect(Intcode([3, 3, 1108, -1, 8, 3, 4, 3, 99], 5)).toEqual(0);
+    expect(Intcode([3, 3, 1108, -1, 8, 3, 4, 3, 99], [8])).toEqual(1);
+    expect(Intcode([3, 3, 1108, -1, 8, 3, 4, 3, 99], [5])).toEqual(0);
   });
 
   test('LESS_THEN', () => {
-    expect(Intcode([3, 9, 7, 9, 10, 9, 4, 9, 99, -1, 8], 8)).toEqual(0);
-    expect(Intcode([3, 9, 7, 9, 10, 9, 4, 9, 99, -1, 8], 6)).toEqual(1);
-    expect(Intcode([3, 9, 7, 9, 10, 9, 4, 9, 99, -1, 8], 10)).toEqual(0);
+    expect(Intcode([3, 9, 7, 9, 10, 9, 4, 9, 99, -1, 8], [8])).toEqual(0);
+    expect(Intcode([3, 9, 7, 9, 10, 9, 4, 9, 99, -1, 8], [6])).toEqual(1);
+    expect(Intcode([3, 9, 7, 9, 10, 9, 4, 9, 99, -1, 8], [10])).toEqual(0);
 
-    expect(Intcode([3, 3, 1107, -1, 8, 3, 4, 3, 99], 8)).toEqual(0);
-    expect(Intcode([3, 3, 1107, -1, 8, 3, 4, 3, 99], 6)).toEqual(1);
-    expect(Intcode([3, 3, 1107, -1, 8, 3, 4, 3, 99], 10)).toEqual(0);
+    expect(Intcode([3, 3, 1107, -1, 8, 3, 4, 3, 99], [8])).toEqual(0);
+    expect(Intcode([3, 3, 1107, -1, 8, 3, 4, 3, 99], [6])).toEqual(1);
+    expect(Intcode([3, 3, 1107, -1, 8, 3, 4, 3, 99], [10])).toEqual(0);
   });
 
   test('JUMP', () => {
     expect(
-      Intcode([3, 12, 6, 12, 15, 1, 13, 14, 13, 4, 13, 99, -1, 0, 1, 9], 0)
+      Intcode([3, 12, 6, 12, 15, 1, 13, 14, 13, 4, 13, 99, -1, 0, 1, 9], [0])
     ).toEqual(0);
     expect(
-      Intcode([3, 3, 1105, -1, 9, 1101, 0, 0, 12, 4, 12, 99, 1], 1)
+      Intcode([3, 3, 1105, -1, 9, 1101, 0, 0, 12, 4, 12, 99, 1], [1])
     ).toEqual(1);
 
     expect(
-      Intcode([3, 12, 6, 12, 15, 1, 13, 14, 13, 4, 13, 99, -1, 0, 1, 9], 7)
+      Intcode([3, 12, 6, 12, 15, 1, 13, 14, 13, 4, 13, 99, -1, 0, 1, 9], [7])
     ).toEqual(1);
     expect(
-      Intcode([3, 12, 6, 12, 15, 1, 13, 14, 13, 4, 13, 99, -1, 0, 1, 9], 0)
+      Intcode([3, 12, 6, 12, 15, 1, 13, 14, 13, 4, 13, 99, -1, 0, 1, 9], [0])
     ).toEqual(0);
   });
 
@@ -94,7 +94,7 @@ describe('Intcode', () => {
           98,
           99,
         ],
-        5
+        [5]
       )
     ).toEqual(999);
     expect(
@@ -148,7 +148,7 @@ describe('Intcode', () => {
           98,
           99,
         ],
-        8
+        [8]
       )
     ).toEqual(1000);
     expect(
@@ -202,7 +202,7 @@ describe('Intcode', () => {
           98,
           99,
         ],
-        10
+        [10]
       )
     ).toEqual(1001);
   });
