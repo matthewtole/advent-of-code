@@ -44,7 +44,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 4   | :star: :star: | [2019/04.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/04.ts) |
 | 5   | :star: :star: | [2019/05.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/05.ts) |
 | 6   | :star: :star: | [2019/06.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/06.ts) |
-| 7   |               |                                                                                  |
+| 7   | :star: :star: | [2019/07.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/07.ts) |
 | 8   |               |                                                                                  |
 | 9   |               |                                                                                  |
 | 10  |               |                                                                                  |
