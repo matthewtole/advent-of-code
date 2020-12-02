@@ -18,3 +18,4 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 2   | :star: :star: | [2019/02.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/02.ts) |
 | 3   | :star: :star: | [2019/03.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/03.ts) |
 | 4   | :star: :star: | [2019/04.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/04.ts) |
+| 5   | :star: :star: | [2019/05.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/05.ts) |

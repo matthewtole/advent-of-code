@@ -4,6 +4,7 @@ import * as day01 from './01';
 import * as day02 from './02';
 import * as day03 from './03';
 import * as day04 from './04';
+import * as day05 from './05';
 
 let day = argv[2] ? parseInt(argv[2]) : 0;
 
@@ -36,7 +37,7 @@ const days = [
   },
   () => {
     console.log();
-    console.log(' - DAY 03 - ');
+    console.log(' - DAY 04 - ');
 
     console.log(
       'Part 1:',
@@ -46,6 +47,15 @@ const days = [
       'Part 2:',
       day04.countValidPassswords(265275, 781584, day04.isValidPasswordPart2)
     );
+  },
+  () => {
+    return day05.parse().then(data => {
+      console.log();
+      console.log(' - DAY 05 - ');
+
+      console.log('Part 1:', day05.part1([...data], 1));
+      console.log('Part 2:', day05.part1([...data], 5));
+    });
   },
 ];
 
