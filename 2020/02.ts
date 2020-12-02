@@ -55,7 +55,7 @@ export const parse = (): Promise<Array<Password>> => {
 };
 
 export const parsePassword = (line: string): Password => {
-  const result = /^([0-9]+)\-([0-9]+)\ ([a-z])\:\ ([a-z]+)$/gm.exec(line);
+  const result = /^([0-9]+)\-([0-9]+)\ ([a-z])\:\ ([a-z]+)$/.exec(line);
   return {
     num1: parseInt(result![1], 10),
     num2: parseInt(result![2], 10),
