@@ -10,7 +10,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | --- | ------------- | -------------------------------------------------------------------------------- |
 | 1   | :star: :star: | [2020/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/01.ts) |
 | 2   | :star: :star: | [2020/02.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/02.ts) |
-| 3   |               |                                                                                  |
+| 3   | :star: :star: | [2020/03.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/03.ts) |
 | 4   |               |                                                                                  |
 | 5   |               |                                                                                  |
 | 6   |               |                                                                                  |
