@@ -1,3 +1,5 @@
+import * as fs from 'fs';
+
 /**
  * Given an array of items, return all possible permuations of the values.
  */
@@ -25,3 +27,22 @@ export function permute<T>(permutation: Array<T>) {
   }
   return result;
 }
+
+/**
+ * Parse a file of Intcode instructions
+ */
+export const parseIntcode = (filename: string): Promise<Array<number>> => {
+  return new Promise((resolve, reject) => {
+    fs.readFile(filename, (err, data) => {
+      if (err) {
+        return reject(err);
+      }
+      return resolve(
+        data
+          .toString()
+          .split(',')
+          .map(line => parseInt(line, 10))
+      );
+    });
+  });
+};

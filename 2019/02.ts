@@ -1,6 +1,5 @@
-import * as fs from 'fs';
-
 import {Intcode} from './intcode';
+import {parseIntcode} from './utils';
 
 /*
 https://adventofcode.com/2019/day/2
@@ -42,17 +41,5 @@ export const part2 = (
  * Parse the puzzle input file ready for processing
  */
 export const parse = (): Promise<Array<number>> => {
-  return new Promise((resolve, reject) => {
-    fs.readFile('./2019/data/02.txt', (err, data) => {
-      if (err) {
-        return reject(err);
-      }
-      return resolve(
-        data
-          .toString()
-          .split(',')
-          .map(line => parseInt(line, 10))
-      );
-    });
-  });
+  return parseIntcode('./2019/data/02.txt');
 };
