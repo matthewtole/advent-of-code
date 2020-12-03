@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import {loadData} from '../shared/utils';
 
 /**
  * https://adventofcode.com/2019/day/4
@@ -111,18 +111,6 @@ export const findIntersectionsWithLength = (
 /**
  * Parse the puzzle input file ready for processing
  */
-export const parse = (): Promise<Array<Array<string>>> => {
-  return new Promise((resolve, reject) => {
-    fs.readFile('./2019/data/03.txt', (err, data) => {
-      if (err) {
-        return reject(err);
-      }
-      return resolve(
-        data
-          .toString()
-          .split('\n')
-          .map(wire => wire.split(','))
-      );
-    });
-  });
+export const parse = async (): Promise<Array<Array<string>>> => {
+  return (await loadData(2019, 3)).split('\n').map(wire => wire.split(','));
 };

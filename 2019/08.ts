@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import {loadData} from '../shared/utils';
 
 /*
 https://adventofcode.com/2019/day/7
@@ -83,16 +83,8 @@ export const parseImageString = (
 /**
  * Parse the puzzle input file ready for processing
  */
-export const parse = (
+export const parse = async (
   width: number,
   height: number
-): Promise<Array<Array<Array<number>>>> => {
-  return new Promise((resolve, reject) => {
-    fs.readFile('./2019/data/08.txt', (err, data) => {
-      if (err) {
-        return reject(err);
-      }
-      return resolve(parseImageString(data.toString(), width, height));
-    });
-  });
-};
+): Promise<Array<Array<Array<number>>>> =>
+  parseImageString(await loadData(2019, 8), width, height);

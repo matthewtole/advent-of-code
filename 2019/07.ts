@@ -1,7 +1,5 @@
-import * as fs from 'fs';
-
 import {IntcodeComputer} from './intcode';
-import {permute} from './utils';
+import {parseIntcode, permute} from './utils';
 
 /*
 https://adventofcode.com/2019/day/7
@@ -54,18 +52,4 @@ export const solve = (
 /**
  * Parse the puzzle input file ready for processing
  */
-export const parse = (): Promise<Array<number>> => {
-  return new Promise((resolve, reject) => {
-    fs.readFile('./2019/data/07.txt', (err, data) => {
-      if (err) {
-        return reject(err);
-      }
-      return resolve(
-        data
-          .toString()
-          .split(',')
-          .map(line => parseInt(line, 10))
-      );
-    });
-  });
-};
+export const parse = (): Promise<Array<number>> => parseIntcode(7);

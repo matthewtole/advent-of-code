@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import {loadData} from '../shared/utils';
 
 /**
  * Given a list of planet pairs, count the total number of direct and indirect orbits.
@@ -70,21 +70,9 @@ const generatePlanets = (
 /**
  * Parse the puzzle input file ready for processing
  */
-export const parse = (): Promise<Array<[string, string]>> => {
-  return new Promise((resolve, reject) => {
-    fs.readFile('./2019/data/06.txt', (err, data) => {
-      if (err) {
-        return reject(err);
-      }
-      return resolve(
-        data
-          .toString()
-          .split('\n')
-          .map(line => {
-            const bits = line.split(')');
-            return [bits[0], bits[1]];
-          })
-      );
-    });
+export const parse = async (): Promise<Array<[string, string]>> => {
+  return (await loadData(2019, 6)).split('\n').map(line => {
+    const bits = line.split(')');
+    return [bits[0], bits[1]];
   });
 };

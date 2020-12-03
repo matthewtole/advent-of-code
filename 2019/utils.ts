@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import {loadData} from '../shared/utils';
 
 /**
  * Given an array of items, return all possible permuations of the values.
@@ -31,18 +31,6 @@ export function permute<T>(permutation: Array<T>) {
 /**
  * Parse a file of Intcode instructions
  */
-export const parseIntcode = (filename: string): Promise<Array<number>> => {
-  return new Promise((resolve, reject) => {
-    fs.readFile(filename, (err, data) => {
-      if (err) {
-        return reject(err);
-      }
-      return resolve(
-        data
-          .toString()
-          .split(',')
-          .map(line => parseInt(line, 10))
-      );
-    });
-  });
+export const parseIntcode = async (day: number): Promise<Array<number>> => {
+  return (await loadData(2019, day)).split(',').map(line => parseInt(line, 10));
 };

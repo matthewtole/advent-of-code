@@ -41,5 +41,5 @@ export const part2 = (
  * Parse the puzzle input file ready for processing
  */
 export const parse = (): Promise<Array<number>> => {
-  return parseIntcode('./2019/data/02.txt');
+  return parseIntcode(2);
 };

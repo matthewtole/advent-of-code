@@ -109,6 +109,4 @@ export const part2 = (program: Array<number>): string => {
 /**
  * Parse the puzzle input file ready for processing
  */
-export const parse = (): Promise<Array<number>> => {
-  return parseIntcode('./2019/data/11.txt');
-};
+export const parse = (): Promise<Array<number>> => parseIntcode(11);

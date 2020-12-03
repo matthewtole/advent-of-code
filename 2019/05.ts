@@ -1,5 +1,4 @@
-import * as fs from 'fs';
-
+import {loadData} from '../shared/utils';
 import {Intcode} from './intcode';
 
 /*
@@ -17,18 +16,6 @@ export const part1 = (program: Array<number>, input: number): number => {
 /**
  * Parse the puzzle input file ready for processing
  */
-export const parse = (): Promise<Array<number>> => {
-  return new Promise((resolve, reject) => {
-    fs.readFile('./2019/data/05.txt', (err, data) => {
-      if (err) {
-        return reject(err);
-      }
-      return resolve(
-        data
-          .toString()
-          .split(',')
-          .map(line => parseInt(line, 10))
-      );
-    });
-  });
+export const parse = async (): Promise<Array<number>> => {
+  return (await loadData(2019, 5)).split(',').map(line => parseInt(line, 10));
 };
