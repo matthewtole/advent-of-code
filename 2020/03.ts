@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import {loadData} from '../shared/utils';
 
 /*
 https://adventofcode.com/2020/day/1
@@ -35,13 +35,5 @@ export const part2 = (
 /**
  * Parse the puzzle input file ready for processing
  */
-export const parse = (): Promise<string> => {
-  return new Promise((resolve, reject) => {
-    fs.readFile('./2020/data/03.txt', (err, data) => {
-      if (err) {
-        return reject(err);
-      }
-      return resolve(data.toString());
-    });
-  });
-};
+/* istanbul ignore next */
+export const parse = (): Promise<string> => loadData(2020, 3);

@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import {loadData} from '../shared/utils';
 
 /*
 https://adventofcode.com/2020/day/2
@@ -38,21 +38,9 @@ export const part2 = (input: Array<Password>): number => {
 /**
  * Parse the puzzle input file ready for processing
  */
-export const parse = (): Promise<Array<Password>> => {
-  return new Promise((resolve, reject) => {
-    fs.readFile('./2020/data/02.txt', (err, data) => {
-      if (err) {
-        return reject(err);
-      }
-      return resolve(
-        data
-          .toString()
-          .split('\n')
-          .map(line => parsePassword(line))
-      );
-    });
-  });
-};
+/* istanbul ignore next */
+export const parse = async (): Promise<Array<Password>> =>
+  (await loadData(2020, 2)).split('\n').map(line => parsePassword(line));
 
 export const parsePassword = (line: string): Password => {
   const result = /^([0-9]+)\-([0-9]+)\ ([a-z])\:\ ([a-z]+)$/.exec(line);
