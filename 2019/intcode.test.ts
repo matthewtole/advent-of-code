@@ -1,4 +1,4 @@
-import {Intcode, parseInstruction} from './intcode';
+import {getAllOutputs, Intcode, parseInstruction} from './intcode';
 
 describe('Intcode', () => {
   test('parseInstruction', () => {
@@ -205,5 +205,49 @@ describe('Intcode', () => {
         [10]
       )
     ).toEqual(1001);
+  });
+
+  test('relative mode', () => {
+    expect(
+      getAllOutputs([
+        109,
+        1,
+        204,
+        -1,
+        1001,
+        100,
+        1,
+        100,
+        1008,
+        100,
+        16,
+        101,
+        1006,
+        101,
+        0,
+        99,
+      ])
+    ).toEqual([
+      109,
+      1,
+      204,
+      -1,
+      1001,
+      100,
+      1,
+      100,
+      1008,
+      100,
+      16,
+      101,
+      1006,
+      101,
+      0,
+      99,
+    ]);
+    expect(Intcode([104, 1125899906842624, 99])).toEqual(1125899906842624);
+    expect(Intcode([1102, 34915192, 34915192, 7, 4, 7, 99, 0])).toEqual(
+      1219070632396864
+    );
   });
 });

@@ -6,6 +6,7 @@ const JUMP_TRUE = 5;
 const JUMP_FALSE = 6;
 const LESS_THAN = 7;
 const EQUALS = 8;
+const RELATIVE_BASE = 9;
 const HALT = 99;
 
 export class IntcodeComputer {
@@ -14,6 +15,7 @@ export class IntcodeComputer {
   private output: number = 0;
   private halted: boolean = false;
   private position = 0;
+  private relativeBase = 0;
 
   constructor(program: Array<number>) {
     this.program = program;
@@ -21,9 +23,26 @@ export class IntcodeComputer {
   }
 
   private getParam = (mode: number): number => {
-    return mode === 0
-      ? this.program[this.program[this.position++]]
-      : this.program[this.position++];
+    switch (mode) {
+      case 0:
+      default:
+        return this.program[this.program[this.position++]];
+      case 1:
+        return this.program[this.position++];
+      case 2:
+        return this.program[this.relativeBase + this.program[this.position++]];
+    }
+  };
+
+  private setParam = (mode: number, value: number) => {
+    switch (mode) {
+      case 2:
+        this.program[this.relativeBase + this.program[this.position++]] = value;
+        break;
+      default:
+        this.program[this.program[this.position++]] = value;
+        break;
+    }
   };
 
   private parseInstruction = (
@@ -40,20 +59,20 @@ export class IntcodeComputer {
 
   private execute() {
     while (this.program[this.position] !== HALT) {
-      const [operation, mode1, mode2] = this.parseInstruction(
+      const [operation, mode1, mode2, mode3] = this.parseInstruction(
         this.program[this.position++]
       );
       switch (operation) {
         case ADD:
           {
             const result = this.getParam(mode1) + this.getParam(mode2);
-            this.program[this.program[this.position++]] = result;
+            this.setParam(mode3, result);
           }
           break;
         case MULIPLY:
           {
             const result = this.getParam(mode1) * this.getParam(mode2);
-            this.program[this.program[this.position++]] = result;
+            this.setParam(mode3, result);
           }
           break;
         case OUTPUT:
@@ -64,7 +83,7 @@ export class IntcodeComputer {
           break;
         case INPUT:
           {
-            this.program[this.program[this.position++]] = this.inputs.shift()!;
+            this.setParam(mode1, this.inputs.shift()!);
           }
           break;
         case JUMP_TRUE:
@@ -88,15 +107,18 @@ export class IntcodeComputer {
         case LESS_THAN:
           {
             const result = this.getParam(mode1) < this.getParam(mode2) ? 1 : 0;
-            this.program[this.program[this.position++]] = result;
+            this.setParam(mode3, result);
           }
           break;
         case EQUALS:
           {
             const result =
               this.getParam(mode1) === this.getParam(mode2) ? 1 : 0;
-            this.program[this.program[this.position++]] = result;
+            this.setParam(mode3, result);
           }
+          break;
+        case RELATIVE_BASE:
+          this.relativeBase += this.getParam(mode1);
           break;
         case HALT:
           this.halted = true;
@@ -130,6 +152,23 @@ export const Intcode = (program: Array<number>, inputs: Array<number> = []) => {
   const intcode = new IntcodeComputer(program);
   inputs.forEach(input => intcode.addInput(input));
   return intcode.run();
+};
+
+export const getAllOutputs = (
+  program: Array<number>,
+  inputs: Array<number> = []
+) => {
+  const computer = new IntcodeComputer([...program]);
+  inputs.forEach(input => computer.addInput(input));
+  const outputs = [];
+  while (!computer.isHalted()) {
+    const output = computer.run();
+    outputs.push(output);
+    if (output === 99) {
+      break;
+    }
+  }
+  return outputs;
 };
 
 export const parseInstruction = (

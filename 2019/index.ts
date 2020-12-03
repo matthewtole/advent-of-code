@@ -8,6 +8,7 @@ import * as day05 from './05';
 import * as day06 from './06';
 import * as day07 from './07';
 import * as day08 from './08';
+import * as day09 from './09';
 
 let day = argv[2] ? parseInt(argv[2]) : 0;
 
@@ -85,6 +86,15 @@ const days = [
 
       console.log('Part 1:', day08.part1(data));
       console.log('Part 2:\n', day08.part2(data));
+    });
+  },
+  () => {
+    return day09.parse().then(data => {
+      console.log();
+      console.log(' - DAY 09 - ');
+
+      console.log('Part 1:', day09.part1(data));
+      console.log('Part 2:', day09.part2(data));
     });
   },
 ];
