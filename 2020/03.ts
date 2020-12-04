@@ -1,7 +1,7 @@
 import {loadData} from '../shared/utils';
 
 /*
-https://adventofcode.com/2020/day/1
+https://adventofcode.com/2020/day/3
 */
 
 /**
