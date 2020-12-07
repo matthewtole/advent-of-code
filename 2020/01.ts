@@ -15,6 +15,7 @@ export const part1 = (input: Array<number>): number => {
       }
     }
   }
+  /* istanbul ignore next */
   return -1;
 };
 
@@ -31,6 +32,7 @@ export const part2 = (input: Array<number>): number => {
       }
     }
   }
+  /* istanbul ignore next */
   return -1;
 };
 

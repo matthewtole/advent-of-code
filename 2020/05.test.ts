@@ -1,4 +1,4 @@
-import {calculateSeatID, part1} from './05';
+import {calculateSeatID, part1, part2} from './05';
 
 describe('Day 5', () => {
   test('calculateSeatID', () => {
@@ -9,5 +9,9 @@ describe('Day 5', () => {
 
   test('part1', () => {
     expect(part1(['BFFFBBFRRR', 'FFFBBBFRRR', 'BBFFBBFRLL'])).toEqual(820);
+  });
+
+  test('part2', () => {
+    expect(part2(['FFFFFBLLL', 'FFFFFBLRL', 'FFFFFBLRR'])).toEqual(9);
   });
 });
