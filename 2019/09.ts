@@ -28,4 +28,5 @@ export const part2 = (program: Array<number>): number => {
 /**
  * Parse the puzzle input file ready for processing
  */
+/* istanbul ignore next */
 export const parse = (): Promise<Array<number>> => parseIntcode(9);

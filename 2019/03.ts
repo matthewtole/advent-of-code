@@ -111,6 +111,7 @@ export const findIntersectionsWithLength = (
 /**
  * Parse the puzzle input file ready for processing
  */
+/* istanbul ignore next */
 export const parse = async (): Promise<Array<Array<string>>> => {
   return (await loadData(2019, 3)).split('\n').map(wire => wire.split(','));
 };

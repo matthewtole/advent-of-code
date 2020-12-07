@@ -36,6 +36,7 @@ export const part2 = (data: Array<string>): number => {
       return i;
     }
   }
+  /* istanbul ignore next */
   return -1;
 };
 

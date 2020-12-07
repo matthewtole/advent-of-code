@@ -16,6 +16,7 @@ export const part1 = (program: Array<number>, input: number): number => {
 /**
  * Parse the puzzle input file ready for processing
  */
+/* istanbul ignore next */
 export const parse = async (): Promise<Array<number>> => {
   return (await loadData(2019, 5)).split(',').map(line => parseInt(line, 10));
 };

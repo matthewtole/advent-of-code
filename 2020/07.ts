@@ -81,5 +81,6 @@ export const part2 = (bags: Bag) => {
   return totalBagCount;
 };
 
+/* istanbul ignore next */
 export const parse = async () =>
   parseBagData((await loadData(2020, 7)).split('\n').map(line => line));

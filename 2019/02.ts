@@ -40,6 +40,7 @@ export const part2 = (
 /**
  * Parse the puzzle input file ready for processing
  */
+/* istanbul ignore next */
 export const parse = (): Promise<Array<number>> => {
   return parseIntcode(2);
 };

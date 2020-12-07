@@ -70,6 +70,7 @@ const generatePlanets = (
 /**
  * Parse the puzzle input file ready for processing
  */
+/* istanbul ignore next */
 export const parse = async (): Promise<Array<[string, string]>> => {
   return (await loadData(2019, 6)).split('\n').map(line => {
     const bits = line.split(')');

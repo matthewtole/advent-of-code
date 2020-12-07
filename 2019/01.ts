@@ -37,5 +37,6 @@ export const part2 = (input: Array<number>): number => {
 /**
  * Parse the puzzle input file ready for processing
  */
+/* istanbul ignore next */
 export const parse = async (): Promise<Array<number>> =>
   (await loadData(2019, 1)).split('\n').map(line => parseInt(line, 10));

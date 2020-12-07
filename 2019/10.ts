@@ -124,5 +124,6 @@ export const parseMap = (data: string): Array<Array<string>> => {
 /**
  * Parse the puzzle input file ready for processing
  */
+/* istanbul ignore next */
 export const parse = async (): Promise<Array<Array<string>>> =>
   parseMap(await loadData(2019, 10));

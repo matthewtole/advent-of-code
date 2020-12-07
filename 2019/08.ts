@@ -83,6 +83,7 @@ export const parseImageString = (
 /**
  * Parse the puzzle input file ready for processing
  */
+/* istanbul ignore next */
 export const parse = async (
   width: number,
   height: number
