@@ -62,6 +62,7 @@ export const part2 = (input: Program): number => {
       return accumulator;
     }
   }
+  /* istanbul ignore next */
   return -1;
 };
 

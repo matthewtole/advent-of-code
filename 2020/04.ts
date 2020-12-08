@@ -21,6 +21,7 @@ const validators: {[key: string]: (data: string) => boolean} = {
   },
   hgt: (data: string) => {
     const height = /([0-9]*)(cm|in)/.exec(data);
+    /* istanbul ignore next */
     if (!height) {
       return false;
     }

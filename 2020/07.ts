@@ -47,6 +47,7 @@ export const part1 = (bags: Bag) => {
     if (!('shiny gold' in bags[bag])) {
       continue;
     }
+    /* istanbul ignore next */
     if (goldContainers.has(bag)) {
       continue;
     }
