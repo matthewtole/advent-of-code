@@ -1,4 +1,4 @@
-import {isValidPasswordPart1, isValidPasswordPart2} from './04';
+import {countValidPassswords, isValidPasswordPart1, isValidPasswordPart2} from './04';
 
 describe('Day 04', () => {
   test('isValidPassword1', () => {
@@ -11,5 +11,11 @@ describe('Day 04', () => {
     expect(isValidPasswordPart2(112233)).toBe(true);
     expect(isValidPasswordPart2(123444)).toBe(false);
     expect(isValidPasswordPart2(111122)).toBe(true);
+  });
+
+  test('countValidPasswords', () => {
+    expect(countValidPassswords(111111, 222222, isValidPasswordPart1)).toEqual(
+      1232
+    );
   });
 });

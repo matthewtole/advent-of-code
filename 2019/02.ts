@@ -34,6 +34,7 @@ export const part2 = (
       }
     }
   }
+  /* istanbul ignore next */
   return -1;
 };
 
