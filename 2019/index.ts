@@ -11,6 +11,7 @@ import * as day08 from './08';
 import * as day09 from './09';
 import * as day10 from './10';
 import * as day11 from './11';
+import * as day16 from './16';
 
 let day = argv[2] ? parseInt(argv[2]) : 0;
 
@@ -111,11 +112,32 @@ const days = [
   () => {
     return day11.parse().then(data => {
       console.log();
-      console.log(' - DAY 10 - ');
+      console.log(' - DAY 11 - ');
 
       console.log('Part 1:', day11.part1(data));
       console.log('Part 2:');
       console.log(day11.part2(data));
+    });
+  },
+  () => {
+    throw new Error('Not yet implemented');
+  },
+  () => {
+    throw new Error('Not yet implemented');
+  },
+  () => {
+    throw new Error('Not yet implemented');
+  },
+  () => {
+    throw new Error('Not yet implemented');
+  },
+  () => {
+    return day16.parse().then(data => {
+      console.log();
+      console.log(' - DAY 16 - ');
+
+      console.log('Part 1:', day16.part1(data));
+      console.log('Part 2:', day16.part2(data));
     });
   },
 ];
