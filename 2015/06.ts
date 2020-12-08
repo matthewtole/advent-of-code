@@ -16,10 +16,7 @@ function updateLights<T>(
     if (!res) {
       return;
     }
-    const minX = parseInt(res[2], 10);
-    const minY = parseInt(res[3], 10);
-    const maxX = parseInt(res[4], 10);
-    const maxY = parseInt(res[5], 10);
+    const [minX, minY, maxX, maxY] = res.slice(2, 6).map(i => parseInt(i, 10));
     for (let y = minY; y <= maxY; y += 1) {
       for (let x = minX; x <= maxX; x += 1) {
         lights[y][x] = updateLight(lights[y][x], res[1]);
