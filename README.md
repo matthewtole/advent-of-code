@@ -16,7 +16,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 6   | :star: :star: | [2020/06.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/06.ts) | 8908 / 7147    |
 | 7   | :star: :star: | [2020/07.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/07.ts) | 585 / **412**  |
 | 8   | :star: :star: | [2020/08.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/08.ts) | **573** / 1873 |
-| 9   |               |                                                                                  |                |
+| 9   | :star: :star: | [2020/09.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/09.ts) | 35624 / 33685  |
 | 10  |               |                                                                                  |                |
 | 11  |               |                                                                                  |                |
 | 12  |               |                                                                                  |                |
