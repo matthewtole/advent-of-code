@@ -42,6 +42,40 @@ const days = [
     console.log('Part 1:', part1(data));
     console.log('Part 2:', part2(data));
   },
+  async () => {},
+  async () => {
+    const {parse, part1, part2} = await import('./08');
+    const data = await parse();
+    console.log(' - DAY 08 - ');
+    console.log('Part 1:', part1(data));
+    console.log('Part 2:', part2(data));
+  },
+  async () => {
+    const {parse, part1, part2} = await import('./09');
+    const data = await parse();
+    console.log(' - DAY 09 - ');
+    console.log('Part 1:', part1(data));
+    console.log('Part 2:', part2(data));
+  },
+  async () => {
+    const {part1, part2} = await import('./10');
+    console.log(' - DAY 10 - ');
+    console.log('Part 1:', part1('1113122113'));
+    console.log('Part 2:', part2('1113122113'));
+  },
+  async () => {
+    const {part1, part2} = await import('./11');
+    console.log(' - DAY 11 - ');
+    console.log('Part 1:', part1('cqjxjnds'));
+    console.log('Part 2:', part2('cqjxjnds'));
+  },
+  async () => {
+    const {parse, part1, part2} = await import('./12');
+    const data = await parse();
+    console.log(' - DAY 12 - ');
+    console.log('Part 1:', part1(data));
+    console.log('Part 2:', part2(data));
+  },
 ];
 
 (async () => {

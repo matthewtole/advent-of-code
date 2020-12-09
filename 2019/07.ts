@@ -1,5 +1,6 @@
+import {permute} from '../shared/utils';
 import {IntcodeComputer} from './intcode';
-import {parseIntcode, permute} from './utils';
+import {parseIntcode} from './utils';
 
 /*
 https://adventofcode.com/2019/day/7
