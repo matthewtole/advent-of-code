@@ -81,9 +81,9 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 11  | :star: :star: | [2015/11.ts](https://github.com/matthewtole/advent-of-code/blob/main/2015/11.ts) |
 | 12  | :star: :star: | [2015/12.ts](https://github.com/matthewtole/advent-of-code/blob/main/2015/12.ts) |
 | 13  |               |                                                                                  |
-| 14  |               |                                                                                  |
-| 15  |               |                                                                                  |
-| 16  |               |                                                                                  |
+| 14  | :star: :star: | [2015/14.ts](https://github.com/matthewtole/advent-of-code/blob/main/2015/14.ts) |
+| 15  | :star: :star: | [2015/15.ts](https://github.com/matthewtole/advent-of-code/blob/main/2015/15.ts) |
+| 16  | :star: :star: | [2015/16.ts](https://github.com/matthewtole/advent-of-code/blob/main/2015/16.ts) |
 | 17  |               |                                                                                  |
 | 18  |               |                                                                                  |
 | 19  |               |                                                                                  |
