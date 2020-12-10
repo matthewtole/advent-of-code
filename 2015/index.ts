@@ -98,6 +98,20 @@ const days = [
     console.log('Part 1:', part1(data));
     console.log('Part 2:', part2(data));
   },
+  async () => {
+    const {parse, part1, part2} = await import('./17');
+    const data = await parse();
+    console.log(' - DAY 17 - ');
+    console.log('Part 1:', part1(data));
+    console.log('Part 2:', part2(data));
+  },
+  async () => {
+    const {parse, part1, part2} = await import('./18');
+    const data = await parse();
+    console.log(' - DAY 18 - ');
+    console.log('Part 1:', part1(data));
+    console.log('Part 2:', part2(data));
+  },
 ];
 
 (async () => {

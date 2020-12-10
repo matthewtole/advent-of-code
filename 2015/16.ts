@@ -40,6 +40,7 @@ export const part2 = (sues: Array<{[key: string]: number}>): number => {
   );
 };
 
+/* istanbul ignore next */
 export const parse = async () =>
   (await loadData(2015, 16)).split('\n').map(line => {
     const res = /^Sue \d+: (\w+): (\d+), (\w+): (\d+), (\w+): (\d+)$/i.exec(

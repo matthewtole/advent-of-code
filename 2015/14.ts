@@ -48,6 +48,7 @@ export const part2 = (input: Array<Reindeer>, seconds = 2503): number => {
   return Math.max(...Object.values(points));
 };
 
+/* istanbul ignore next */
 export const parse = async () =>
   (await loadData(2015, 14)).split('\n').map(line => {
     const res = /^([a-z]+) can fly (\d+) km\/s\ for (\d+) seconds, but then must rest for (\d+) seconds\.$/i.exec(
