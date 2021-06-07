@@ -12,7 +12,7 @@ export const part1 = (program: Array<number>): number => {
   while (!computer.isHalted()) {
     outputs.push(computer.run());
   }
-  return outputs[outputs.length - 1];
+  return outputs[outputs.length - 1]!;
 };
 
 export const part2 = (program: Array<number>): number => {
@@ -22,7 +22,7 @@ export const part2 = (program: Array<number>): number => {
   while (!computer.isHalted()) {
     outputs.push(computer.run());
   }
-  return outputs[outputs.length - 1];
+  return outputs[outputs.length - 1]!;
 };
 
 /**

@@ -24,7 +24,7 @@ export const part2 = (groups: Array<string>): number =>
     const people = group.split('\n').map(person => person.split(''));
     return (
       total +
-      people[0].filter(q => people.slice(1).every(p => p.includes(q))).length
+      people[0]!.filter(q => people.slice(1).every(p => p.includes(q))).length
     );
   }, 0);
 

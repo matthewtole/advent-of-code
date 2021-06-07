@@ -12,7 +12,7 @@ type Coordinate = [number, number];
  */
 export const part1 = (map: Array<Array<string>>): [Coordinate, number] => {
   const asteroids = getAsteroids(map);
-  let bestAsteroid = asteroids[0];
+  let bestAsteroid = asteroids[0]!;
   let max = 0;
 
   asteroids.forEach(asteroid => {
@@ -63,15 +63,13 @@ export const part2 = (
     });
 
   let index = 0;
-  while (sortedAngles.some(angle => asteroidsByAngle[angle].length)) {
-    const asteroid = asteroidsByAngle[sortedAngles[index]]
-      .sort((a, b) => {
-        if (distanceBetween(laser, a) < distanceBetween(laser, b)) {
-          return -1;
-        }
-        return 1;
-      })
-      .shift();
+  while (sortedAngles.some(angle => asteroidsByAngle[angle]!.length)) {
+    const asteroid = asteroidsByAngle[sortedAngles[index]!]!.sort((a, b) => {
+      if (distanceBetween(laser, a) < distanceBetween(laser, b)) {
+        return -1;
+      }
+      return 1;
+    }).shift();
     if (asteroid) {
       orderedAsteroids.push(asteroid);
     }
@@ -86,7 +84,7 @@ export const part2 = (
  */
 export const angleBetween = (a: Coordinate, b: Coordinate): number => {
   const dir = [b[0] - a[0], b[1] - a[1]];
-  return (Math.atan2(dir[0], -1 * dir[1]) * (180 / Math.PI) + 360) % 360;
+  return (Math.atan2(dir[0]!, -1 * dir[1]!) * (180 / Math.PI) + 360) % 360;
 };
 
 /**
@@ -102,8 +100,8 @@ export const distanceBetween = (a: Coordinate, b: Coordinate): number => {
 const getAsteroids = (map: Array<Array<string>>): Array<Coordinate> => {
   const asteroids: Array<Coordinate> = [];
   for (let y = 0; y < map.length; y += 1) {
-    for (let x = 0; x < map[y].length; x += 1) {
-      if (map[y][x] === '#') {
+    for (let x = 0; x < map[y]!.length; x += 1) {
+      if (map[y]![x]! === '#') {
         asteroids.push([x, y]);
       }
     }

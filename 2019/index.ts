@@ -37,8 +37,8 @@ const days = [
       console.log();
       console.log(' - DAY 03 - ');
 
-      console.log('Part 1:', day03.part1(data[0], data[1]));
-      console.log('Part 2:', day03.part2(data[0], data[1]));
+      console.log('Part 1:', day03.part1(data[0]!, data[1]!));
+      console.log('Part 2:', day03.part2(data[0]!, data[1]!));
     });
   },
   () => {
@@ -122,7 +122,7 @@ const days = [
 
 (async () => {
   if (day > 0) {
-    await days[day - 1]();
+    await days[day - 1]!();
   } else {
     for (const day of days) {
       await day();

@@ -74,6 +74,6 @@ const generatePlanets = (
 export const parse = async (): Promise<Array<[string, string]>> => {
   return (await loadData(2019, 6)).split('\n').map(line => {
     const bits = line.split(')');
-    return [bits[0], bits[1]];
+    return [bits[0]!, bits[1]!];
   });
 };

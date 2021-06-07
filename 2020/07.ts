@@ -15,14 +15,14 @@ export const parseBagData = (input: Array<string>): Bag => {
     const [outer, inner] = bag.split(' contain ');
     return {
       ...bags,
-      [outer.replace(' bags', '')]: inner
+      [outer!.replace(' bags', '')]: inner!
         .split(', ')
         .reduce((contents, bag) => {
           const res = /^(\d+)\ ([a-z\ ]+)\ bags?\.?$/.exec(bag);
           return res
             ? {
                 ...contents,
-                [res[2]]: parseInt(res[1], 10),
+                [res[2]!]: parseInt(res[1]!, 10),
               }
             : contents;
         }, {} as BagContents),
@@ -34,7 +34,7 @@ export const parseBagData = (input: Array<string>): Bag => {
  * Find all of the bags that can directly contain the given bag type
  */
 const findImmediateContainers = (bags: Bag, type: string) => {
-  return Object.keys(bags).filter(b => type in bags[b]);
+  return Object.keys(bags).filter(b => type in bags[b]!);
 };
 
 /**
@@ -44,7 +44,7 @@ const findImmediateContainers = (bags: Bag, type: string) => {
 export const part1 = (bags: Bag) => {
   const goldContainers = new Set<string>([]);
   for (let bag in bags) {
-    if (!('shiny gold' in bags[bag])) {
+    if (!('shiny gold' in bags[bag]!)) {
       continue;
     }
     /* istanbul ignore next */
@@ -73,8 +73,8 @@ export const part2 = (bags: Bag) => {
   let bagsToCheck: Array<[string, number]> = [['shiny gold', 1]];
   while (bagsToCheck.length) {
     const [bag, count] = bagsToCheck.pop()!;
-    totalBagCount = Object.keys(bags[bag]).reduce((c, b) => {
-      const bagCount = count * bags[bag][b];
+    totalBagCount = Object.keys(bags[bag]!).reduce((c, b) => {
+      const bagCount = count * bags[bag]![b]!;
       bagsToCheck.push([b, bagCount]);
       return c + bagCount;
     }, totalBagCount);

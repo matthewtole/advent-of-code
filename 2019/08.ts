@@ -17,8 +17,8 @@ export const part1 = (image: Array<Array<Array<number>>>): number => {
   });
 
   return (
-    countPixels(image[leastEmptyPixelsIndex], 1) *
-    countPixels(image[leastEmptyPixelsIndex], 2)
+    countPixels(image[leastEmptyPixelsIndex]!, 1) *
+    countPixels(image[leastEmptyPixelsIndex]!, 2)
   );
 };
 
@@ -36,8 +36,8 @@ const countPixels = (layer: Array<Array<number>>, pixel: number): number => {
 export const flattenImage = (
   image: Array<Array<Array<number>>>
 ): Array<Array<number>> => {
-  const height = image[0].length;
-  const width = image[0][0].length;
+  const height = image[0]!.length;
+  const width = image[0]![0]!.length;
 
   const flattened: Array<Array<number>> = [];
   for (let y = 0; y < height; y += 1) {
@@ -45,7 +45,7 @@ export const flattenImage = (
     for (let x = 0; x < width; x += 1) {
       let pixel = 2;
       for (let l = 0; l < image.length; l += 1) {
-        pixel = image[l][y][x];
+        pixel = image[l]![y]![x]!;
         if (pixel !== 2) {
           break;
         }

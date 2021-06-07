@@ -22,17 +22,17 @@ export const runAmplifiers = (
 
   let output = 0;
   let currentComputer = 0;
-  computers[currentComputer].addInput(0);
+  computers[currentComputer]!.addInput(0);
   while (true) {
-    output = computers[currentComputer].run();
+    output = computers[currentComputer]!.run();
     if (
-      computers[currentComputer].isHalted() &&
+      computers[currentComputer]!.isHalted() &&
       currentComputer === computers.length - 1
     ) {
       return output;
     }
     currentComputer = (currentComputer + 1) % computers.length;
-    computers[currentComputer].addInput(output);
+    computers[currentComputer]!.addInput(output);
   }
 };
 

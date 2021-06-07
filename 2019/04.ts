@@ -33,7 +33,7 @@ const digitize = (password: number): Array<number> =>
  */
 const neverDecreases = (digits: Array<number>): boolean => {
   return digits.every((d: number, index: number) => {
-    return index <= 0 || d >= digits[index - 1];
+    return index <= 0 || d >= digits[index - 1]!;
   });
 };
 

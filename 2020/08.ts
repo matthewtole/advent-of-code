@@ -15,8 +15,8 @@ const runProgram = (input: Program): [number, boolean] => {
       return [accumulator, false];
     }
     positions.add(position);
-    const [command, value] = input[position];
-    switch (command) {
+    const [command, value] = input[position]!;
+    switch (command!) {
       case 'jmp':
         position += value;
         break;
@@ -54,7 +54,7 @@ export const part1 = (input: Program): number => {
  */
 export const part2 = (input: Program): number => {
   for (let index = 0; index < input.length; index++) {
-    if (!['jmp', 'nop'].includes(input[index][0])) {
+    if (!['jmp', 'nop'].includes(input[index]![0])) {
       continue;
     }
     const [accumulator, didTerminate] = runProgram(flipCommand(input, index));
@@ -72,7 +72,7 @@ export const part2 = (input: Program): number => {
 export const parseProgram = (data: string): Program => {
   return data.split('\n').map(line => {
     const bits = line.split(' ');
-    return [bits[0], parseInt(bits[1], 10)] as [string, number];
+    return [bits[0], parseInt(bits[1]!, 10)] as [string, number];
   });
 };
 

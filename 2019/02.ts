@@ -14,9 +14,9 @@ export const part1 = (
   noun: number,
   verb: number
 ): number => {
-  const output = [program[0], noun, verb, ...program.slice(3)];
+  const output = [program[0]!, noun, verb, ...program.slice(3)];
   Intcode(output);
-  return output[0];
+  return output[0]!;
 };
 
 /**

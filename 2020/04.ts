@@ -27,11 +27,11 @@ const validators: {[key: string]: (data: string) => boolean} = {
     }
     return (
       (height[2] === 'cm' &&
-        parseInt(height[1], 10) >= 150 &&
-        parseInt(height[1], 10) <= 193) ||
+        parseInt(height[1]!, 10) >= 150 &&
+        parseInt(height[1]!, 10) <= 193) ||
       (height[2] === 'in' &&
-        parseInt(height[1], 10) >= 59 &&
-        parseInt(height[1], 10) <= 76)
+        parseInt(height[1]!, 10) >= 59 &&
+        parseInt(height[1]!, 10) <= 76)
     );
   },
   hcl: (data: string) => {
@@ -63,7 +63,7 @@ export const hasRequiredFields = (passport: Passport): boolean =>
 
 export const hasValidFields = (passport: Passport): boolean => {
   return Object.keys(passport).every(field => {
-    return validators[field](passport[field]);
+    return validators[field]!(passport[field]!);
   });
 };
 
@@ -79,7 +79,7 @@ export const parsePassport = (input: string): Passport => {
     .split(' ')
     .forEach(item => {
       const bits = item.split(':');
-      passport[bits[0]] = bits[1];
+      passport[bits[0]!] = bits[1]!;
     });
   return passport;
 };

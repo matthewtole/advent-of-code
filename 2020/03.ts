@@ -13,10 +13,10 @@ export const part1 = (input: string, slope: [number, number]): number => {
   let count = 0;
   const data = input.split('\n').map(row => row.split(''));
   while (pos[1] < data.length) {
-    if (data[pos[1]][pos[0]] === '#') {
+    if (data[pos[1]]![pos[0]]! === '#') {
       count += 1;
     }
-    pos = [(pos[0] + slope[0]) % data[0].length, pos[1] + slope[1]];
+    pos = [(pos[0] + slope[0]) % data[0]!.length, pos[1] + slope[1]];
   }
   return count;
 };

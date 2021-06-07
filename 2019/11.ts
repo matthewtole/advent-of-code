@@ -41,16 +41,16 @@ const PaintingRobot = (
   const move = () => {
     switch (direction) {
       case 'N':
-        pos = [pos[0], pos[1] - 1];
+        pos = [pos[0]!, pos[1]! - 1];
         break;
       case 'E':
-        pos = [pos[0] + 1, pos[1]];
+        pos = [pos[0]! + 1, pos[1]!];
         break;
       case 'S':
-        pos = [pos[0], pos[1] + 1];
+        pos = [pos[0]!, pos[1]! + 1];
         break;
       case 'W':
-        pos = [pos[0] - 1, pos[1]];
+        pos = [pos[0]! - 1, pos[1]!];
         break;
     }
   };
@@ -80,19 +80,19 @@ export const part1 = (program: Array<number>): number => {
 export const part2 = (program: Array<number>): string => {
   const result = PaintingRobot({'0|0': 1}, program);
   const minX = Object.keys(result).reduce(
-    (min, coord) => Math.min(min, parseInt(coord.split('|')[0])),
+    (min, coord) => Math.min(min, parseInt(coord.split('|')[0]!)),
     Infinity
   );
   const minY = Object.keys(result).reduce(
-    (min, coord) => Math.min(min, parseInt(coord.split('|')[1])),
+    (min, coord) => Math.min(min, parseInt(coord.split('|')[1]!)),
     Infinity
   );
   const maxX = Object.keys(result).reduce(
-    (max, coord) => Math.max(max, parseInt(coord.split('|')[0])),
+    (max, coord) => Math.max(max, parseInt(coord.split('|')[0]!)),
     -Infinity
   );
   const maxY = Object.keys(result).reduce(
-    (max, coord) => Math.max(max, parseInt(coord.split('|')[1])),
+    (max, coord) => Math.max(max, parseInt(coord.split('|')[1]!)),
     -Infinity
   );
 
