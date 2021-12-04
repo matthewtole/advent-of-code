@@ -1,4 +1,4 @@
-![Advent of Code](https://repository-images.githubusercontent.com/317645101/ed17dd00-3744-11eb-8581-ff1ef6309717)
+![Advent of Code](https://repository-images.githubusercontent.com/317645101/e6fd6838-227f-4728-8bfd-2bb53e1cc5b3)
 
 These are my solutions for the [Advent of Code](https://adventofcode.com/).
 
