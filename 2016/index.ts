@@ -29,6 +29,12 @@ const days = [
     console.log('Part 1:', part1(data));
     console.log('Part 2:', part2(data));
   },
+  async () => {
+    const {part1, part2} = await import('./05');
+    console.log(' - DAY 05 - ');
+    console.log('Part 1:', part1('cxdnnyjw'));
+    console.log('Part 2:', part2('cxdnnyjw'));
+  },
 ];
 
 execute(days).then();
