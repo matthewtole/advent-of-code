@@ -1,4 +1,8 @@
-import {countValidPassswords, isValidPasswordPart1, isValidPasswordPart2} from './04';
+import {
+  countValidPassswords,
+  isValidPasswordPart1,
+  isValidPasswordPart2,
+} from './04';
 
 describe('Day 04', () => {
   test('isValidPassword1', () => {

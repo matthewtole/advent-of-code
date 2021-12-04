@@ -67,9 +67,10 @@ export const part2 = (ingredients: Array<Ingredient>): number =>
 
 export const parse = async () =>
   (await loadData(2015, 15)).split('\n').map(line => {
-    const res = /^[a-z]+: [a-z]+ ([-\d]+), [a-z]+ ([-\d]+), [a-z]+ ([-\d]+), [a-z]+ ([-\d]+), [a-z]+ ([-\d]+)$/i.exec(
-      line
-    )!;
+    const res =
+      /^[a-z]+: [a-z]+ ([-\d]+), [a-z]+ ([-\d]+), [a-z]+ ([-\d]+), [a-z]+ ([-\d]+), [a-z]+ ([-\d]+)$/i.exec(
+        line
+      )!;
     return [
       Number(res[1]),
       Number(res[2]),

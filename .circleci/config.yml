@@ -8,6 +8,6 @@ jobs:
     steps:
       - checkout
       - run: npm install
-      - run: npm test -- --collectCoverage
+      - run: npm run test:all -- --collectCoverage
       - codecov/upload:
           file: coverage/clover.xml

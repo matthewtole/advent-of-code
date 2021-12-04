@@ -1,4 +1,10 @@
-import {hasValidFields, parsePassport, parsePassports, part1, part2} from './04';
+import {
+  hasValidFields,
+  parsePassport,
+  parsePassports,
+  part1,
+  part2,
+} from './04';
 
 describe('Day 4', () => {
   test.each([

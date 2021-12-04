@@ -9,7 +9,12 @@
     "2019": "ts-node 2019/index.ts",
     "2020": "ts-node 2020/index.ts",
     "2021": "ts-node 2021/index.ts",
-    "test": "jest",
+    "test:2021": "jest 2021/",
+    "test:2020": "jest 2020/",
+    "test:2019": "jest 2019/",
+    "test:2015": "jest 2015/",
+    "test": "npm run test:2021",
+    "test:all": "jest",
     "prettier": "prettier -w **/*.ts"
   },
   "author": "Matthew Tole <matthewtole@gmail.com>",
@@ -23,15 +28,16 @@
   },
   "homepage": "https://github.com/matthewtole/advent-of-code#readme",
   "dependencies": {
-    "jest": "^26.6.3",
-    "ts-node": "^9.0.0",
-    "typescript": "^4.1.2"
+    "jest": "^27.4.3",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
-    "@babel/preset-env": "^7.12.7",
-    "@babel/preset-typescript": "^7.12.7",
-    "@types/jest": "^26.0.15",
-    "babel-jest": "^26.6.3"
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.3",
+    "babel-jest": "^27.4.2",
+    "prettier": "^2.5.0"
   }
 }

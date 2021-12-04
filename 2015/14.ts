@@ -51,8 +51,9 @@ export const part2 = (input: Array<Reindeer>, seconds = 2503): number => {
 /* istanbul ignore next */
 export const parse = async () =>
   (await loadData(2015, 14)).split('\n').map(line => {
-    const res = /^([a-z]+) can fly (\d+) km\/s\ for (\d+) seconds, but then must rest for (\d+) seconds\.$/i.exec(
-      line
-    )!;
+    const res =
+      /^([a-z]+) can fly (\d+) km\/s\ for (\d+) seconds, but then must rest for (\d+) seconds\.$/i.exec(
+        line
+      )!;
     return [res[1], Number(res[2]), Number(res[3]), Number(res[4])] as Reindeer;
   });
