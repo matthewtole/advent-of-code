@@ -1,4 +1,4 @@
-import {argv} from 'process';
+import {execute} from '../shared/utils';
 
 const days = [
   async () => {
@@ -75,14 +75,4 @@ const days = [
   },
 ];
 
-(async () => {
-  const day = argv[2] ? parseInt(argv[2]) : 0;
-  if (day > 0) {
-    await days[day - 1]?.();
-  } else {
-    for (const day of days) {
-      await day();
-      console.log();
-    }
-  }
-})().then();
+execute(days).then();
