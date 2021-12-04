@@ -6,6 +6,7 @@ type Board = Array<Array<number>>;
 type Data = [Numbers, Array<Board>];
 
 export const parseData = (data: Array<string>): Data => [
+  /* istanbul ignore next */
   data.shift()?.split(',').map(Number) ?? [],
   data.map(board =>
     board.split('\n').map(row =>
