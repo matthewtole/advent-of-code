@@ -2,7 +2,7 @@
 
 These are my solutions for the [Advent of Code](https://adventofcode.com/).
 
-![CircleCI](https://img.shields.io/circleci/build/github/matthewtole/advent-of-code?style=for-the-badge) [![Codecov](https://img.shields.io/codecov/c/github/matthewtole/advent-of-code?style=for-the-badge)](https://codecov.io/gh/matthewtole/advent-of-code)
+[![CircleCI](https://img.shields.io/circleci/build/github/matthewtole/advent-of-code?style=for-the-badge)](https://app.circleci.com/pipelines/github/matthewtole/advent-of-code?branch=main) [![Codecov](https://img.shields.io/codecov/c/github/matthewtole/advent-of-code?style=for-the-badge)](https://codecov.io/gh/matthewtole/advent-of-code)
 
 ## 2021
 
