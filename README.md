@@ -12,27 +12,6 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 2   | :star: :star: | [2021/02.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/02.ts) | 117076 / 112897 |
 | 3   | :star: :star: | [2021/03.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/03.ts) | 90271 / 66488   |
 | 4   | :star: :star: | [2021/04.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/04.ts) | 12286 / 10910   |
-| 5   |               |                                                                                  |
-| 6   |               |                                                                                  |
-| 7   |               |                                                                                  |
-| 8   |               |                                                                                  |
-| 9   |               |                                                                                  |
-| 10  |               |                                                                                  |
-| 11  |               |                                                                                  |
-| 12  |               |                                                                                  |
-| 13  |               |                                                                                  |
-| 14  |               |                                                                                  |
-| 15  |               |                                                                                  |
-| 16  |               |                                                                                  |
-| 17  |               |                                                                                  |
-| 18  |               |                                                                                  |
-| 19  |               |                                                                                  |
-| 20  |               |                                                                                  |
-| 21  |               |                                                                                  |
-| 22  |               |                                                                                  |
-| 23  |               |                                                                                  |
-| 24  |               |                                                                                  |
-| 25  |               |                                                                                  |
 
 ## 2020
 
@@ -47,22 +26,6 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 7   | :star: :star: | [2020/07.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/07.ts) | 585 / **412**  |
 | 8   | :star: :star: | [2020/08.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/08.ts) | **573** / 1873 |
 | 9   | :star: :star: | [2020/09.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/09.ts) | 35624 / 33685  |
-| 10  |               |                                                                                  |                |
-| 11  |               |                                                                                  |                |
-| 12  |               |                                                                                  |                |
-| 13  |               |                                                                                  |                |
-| 14  |               |                                                                                  |                |
-| 15  |               |                                                                                  |                |
-| 16  |               |                                                                                  |                |
-| 17  |               |                                                                                  |                |
-| 18  |               |                                                                                  |                |
-| 19  |               |                                                                                  |                |
-| 20  |               |                                                                                  |                |
-| 21  |               |                                                                                  |                |
-| 22  |               |                                                                                  |                |
-| 23  |               |                                                                                  |                |
-| 24  |               |                                                                                  |                |
-| 25  |               |                                                                                  |                |
 
 ## 2019
 
@@ -79,20 +42,6 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 9   | :star: :star: | [2019/09.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/09.ts) |
 | 10  | :star: :star: | [2019/10.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/10.ts) |
 | 11  | :star: :star: | [2019/11.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/11.ts) |
-| 12  |               |                                                                                  |
-| 13  |               |                                                                                  |
-| 14  |               |                                                                                  |
-| 15  |               |                                                                                  |
-| 16  |               |                                                                                  |
-| 17  |               |                                                                                  |
-| 18  |               |                                                                                  |
-| 19  |               |                                                                                  |
-| 20  |               |                                                                                  |
-| 21  |               |                                                                                  |
-| 22  |               |                                                                                  |
-| 23  |               |                                                                                  |
-| 24  |               |                                                                                  |
-| 25  |               |                                                                                  |
 
 ## 2016
 
@@ -102,27 +51,6 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 2   | :star: :star: | [2016/02.ts](https://github.com/matthewtole/advent-of-code/blob/main/2016/02.ts) |
 | 3   | :star: :star: | [2016/03.ts](https://github.com/matthewtole/advent-of-code/blob/main/2016/03.ts) |
 | 4   | :star: :star: | [2016/04.ts](https://github.com/matthewtole/advent-of-code/blob/main/2016/04.ts) |
-| 5   |               |                                                                                  |
-| 6   |               |                                                                                  |
-| 7   |               |                                                                                  |
-| 8   |               |                                                                                  |
-| 9   |               |                                                                                  |
-| 10  |               |                                                                                  |
-| 11  |               |                                                                                  |
-| 12  |               |                                                                                  |
-| 13  |               |                                                                                  |
-| 14  |               |                                                                                  |
-| 15  |               |                                                                                  |
-| 16  |               |                                                                                  |
-| 17  |               |                                                                                  |
-| 18  |               |                                                                                  |
-| 19  |               |                                                                                  |
-| 20  |               |                                                                                  |
-| 21  |               |                                                                                  |
-| 22  |               |                                                                                  |
-| 23  |               |                                                                                  |
-| 24  |               |                                                                                  |
-| 25  |               |                                                                                  |
 
 ## 2015
 
@@ -146,10 +74,3 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 16  | :star: :star: | [2015/16.ts](https://github.com/matthewtole/advent-of-code/blob/main/2015/16.ts) |
 | 17  | :star: :star: | [2015/17.ts](https://github.com/matthewtole/advent-of-code/blob/main/2015/18.ts) |
 | 18  | :star: :star: | [2015/18.ts](https://github.com/matthewtole/advent-of-code/blob/main/2015/18.ts) |
-| 19  |               |                                                                                  |
-| 20  |               |                                                                                  |
-| 21  |               |                                                                                  |
-| 22  |               |                                                                                  |
-| 23  |               |                                                                                  |
-| 24  |               |                                                                                  |
-| 25  |               |                                                                                  |
