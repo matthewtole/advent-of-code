@@ -4,6 +4,36 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 
 ![CircleCI](https://img.shields.io/circleci/build/github/matthewtole/advent-of-code?style=for-the-badge) [![Codecov](https://img.shields.io/codecov/c/github/matthewtole/advent-of-code?style=for-the-badge)](https://codecov.io/gh/matthewtole/advent-of-code)
 
+## 2021
+
+| Day | Solved?       | Solution                                                                         |
+| --- | ------------- | -------------------------------------------------------------------------------- |
+| 1   | :star: :star: | [2021/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/01.ts) |
+| 2   | :star: :star: | [2021/02.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/02.ts) |
+| 3   | :star: :star: | [2021/03.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/03.ts) |
+| 4   |               |                                                                                  |
+| 5   |               |                                                                                  |
+| 6   |               |                                                                                  |
+| 7   |               |                                                                                  |
+| 8   |               |                                                                                  |
+| 9   |               |                                                                                  |
+| 10  |               |                                                                                  |
+| 11  |               |                                                                                  |
+| 12  |               |                                                                                  |
+| 13  |               |                                                                                  |
+| 14  |               |                                                                                  |
+| 15  |               |                                                                                  |
+| 16  |               |                                                                                  |
+| 17  |               |                                                                                  |
+| 18  |               |                                                                                  |
+| 19  |               |                                                                                  |
+| 20  |               |                                                                                  |
+| 21  |               |                                                                                  |
+| 22  |               |                                                                                  |
+| 23  |               |                                                                                  |
+| 24  |               |                                                                                  |
+| 25  |               |                                                                                  |
+
 ## 2020
 
 | Day | Solved?       | Solution                                                                         | Rank           |
