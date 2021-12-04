@@ -20,7 +20,7 @@ export const loadData = (year: number, day: number): Promise<string> => {
 /**
  * Given an array of items, return all possible permuations of the values.
  */
-export function permute<T>(permutation: Array<T>) {
+export function permute<T>(permutation: Array<T | undefined>) {
   var length = permutation.length,
     result = [permutation.slice()],
     c = new Array(length).fill(0),

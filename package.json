@@ -8,6 +8,7 @@
     "2015": "ts-node 2015/index.ts",
     "2019": "ts-node 2019/index.ts",
     "2020": "ts-node 2020/index.ts",
+    "2021": "ts-node 2021/index.ts",
     "test": "jest",
     "prettier": "prettier -w **/*.ts"
   },
