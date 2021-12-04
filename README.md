@@ -6,12 +6,12 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 
 ## 2021
 
-| Day | Solved?       | Solution                                                                         |
-| --- | ------------- | -------------------------------------------------------------------------------- |
-| 1   | :star: :star: | [2021/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/01.ts) |
-| 2   | :star: :star: | [2021/02.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/02.ts) |
-| 3   | :star: :star: | [2021/03.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/03.ts) |
-| 4   | :star: :star: | [2021/04.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/04.ts) |
+| Day | Solved?       | Solution                                                                         | Rank            |
+| --- | ------------- | -------------------------------------------------------------------------------- | --------------- |
+| 1   | :star: :star: | [2021/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/01.ts) | 147690 / 132416 |
+| 2   | :star: :star: | [2021/02.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/02.ts) | 117076 / 112897 |
+| 3   | :star: :star: | [2021/03.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/03.ts) | 90271 / 66488   |
+| 4   | :star: :star: | [2021/04.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/04.ts) | 12286 / 10910   |
 | 5   |               |                                                                                  |
 | 6   |               |                                                                                  |
 | 7   |               |                                                                                  |
