@@ -6,26 +6,29 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 
 ## 2021
 
-| Day | Solved?       | Solution                                                                         | Rank            |
-| --- | ------------- | -------------------------------------------------------------------------------- | --------------- |
-| 1   | :star: :star: | [2021/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/01.ts) | 147690 / 132416 |
-| 2   | :star: :star: | [2021/02.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/02.ts) | 117076 / 112897 |
-| 3   | :star: :star: | [2021/03.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/03.ts) | 90271 / 66488   |
-| 4   | :star: :star: | [2021/04.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/04.ts) | 12286 / 10910   |
+| Day | Solved?       | Solution                                                                         |
+| --- | ------------- | -------------------------------------------------------------------------------- |
+| 1   | :star: :star: | [2021/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/01.ts) |
+| 2   | :star: :star: | [2021/02.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/02.ts) |
+| 3   | :star: :star: | [2021/03.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/03.ts) |
+| 4   | :star: :star: | [2021/04.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/04.ts) |
+| 5   |  |  |
+| 6   | :star: :star: | [2021/06.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/06.ts) |
+| 7   | :star: :star: | [2021/07.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/07.ts) |
 
 ## 2020
 
-| Day | Solved?       | Solution                                                                         | Rank           |
-| --- | ------------- | -------------------------------------------------------------------------------- | -------------- |
-| 1   | :star: :star: | [2020/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/01.ts) | 53816 / 49402  |
-| 2   | :star: :star: | [2020/02.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/02.ts) | 8387 / 7847    |
-| 3   | :star: :star: | [2020/03.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/03.ts) | 5723 / 4597    |
-| 4   | :star: :star: | [2020/04.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/04.ts) | 1126 / 1394    |
-| 5   | :star: :star: | [2020/05.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/05.ts) | 39484 / 37850  |
-| 6   | :star: :star: | [2020/06.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/06.ts) | 8908 / 7147    |
-| 7   | :star: :star: | [2020/07.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/07.ts) | 585 / **412**  |
-| 8   | :star: :star: | [2020/08.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/08.ts) | **573** / 1873 |
-| 9   | :star: :star: | [2020/09.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/09.ts) | 35624 / 33685  |
+| Day | Solved?       | Solution                                                                         |
+| --- | ------------- | -------------------------------------------------------------------------------- |
+| 1   | :star: :star: | [2020/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/01.ts) |
+| 2   | :star: :star: | [2020/02.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/02.ts) |
+| 3   | :star: :star: | [2020/03.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/03.ts) |
+| 4   | :star: :star: | [2020/04.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/04.ts) |
+| 5   | :star: :star: | [2020/05.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/05.ts) |
+| 6   | :star: :star: | [2020/06.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/06.ts) |
+| 7   | :star: :star: | [2020/07.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/07.ts) |
+| 8   | :star: :star: | [2020/08.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/08.ts) |
+| 9   | :star: :star: | [2020/09.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/09.ts) |
 
 ## 2019
 
