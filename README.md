@@ -56,6 +56,8 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 2   | :star: :star: | [2016/02.ts](https://github.com/matthewtole/advent-of-code/blob/main/2016/02.ts) |
 | 3   | :star: :star: | [2016/03.ts](https://github.com/matthewtole/advent-of-code/blob/main/2016/03.ts) |
 | 4   | :star: :star: | [2016/04.ts](https://github.com/matthewtole/advent-of-code/blob/main/2016/04.ts) |
+| 5   | :star: :star: | [2016/05.ts](https://github.com/matthewtole/advent-of-code/blob/main/2016/05.ts) |
+| 6   | :star: :star: | [2016/06.ts](https://github.com/matthewtole/advent-of-code/blob/main/2016/06.ts) |
 
 ## 2015
 
