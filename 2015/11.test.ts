@@ -1,6 +1,6 @@
 import {isValidPassword, part1, part2} from './11';
 
-describe.skip('Day 11', () => {
+describe('Day 11', () => {
   test('isValidPassword', () => {
     expect(isValidPassword('hijklmmn')).toBeFalsy();
     expect(isValidPassword('abbceffg')).toBeFalsy();
