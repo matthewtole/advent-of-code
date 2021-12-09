@@ -35,6 +35,13 @@ const days = [
     console.log('Part 1:', part1('cxdnnyjw'));
     console.log('Part 2:', part2('cxdnnyjw'));
   },
+  async () => {
+    const {parse, part1, part2} = await import('./06');
+    const data = await parse();
+    console.log(' - DAY 06 - ');
+    console.log('Part 1:', part1(data));
+    console.log('Part 2:', part2(data));
+  },
 ];
 
 execute(days).then();

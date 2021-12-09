@@ -1,5 +1,4 @@
 {
-  "conventionalCommits.scopes": ["2020", "2019", "2015"],
   "typescript.tsdk": "node_modules/typescript/lib",
   "jest.jestCommandLine": "npm run test:all --"
 }
