@@ -1,5 +1,4 @@
-import {loadData} from '../shared/utils';
-import {sum} from './utils';
+import {loadData, sum} from '../shared/utils';
 
 type Numbers = Array<number>;
 type Board = Array<Array<number>>;

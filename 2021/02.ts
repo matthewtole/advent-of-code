@@ -1,5 +1,4 @@
-import {loadData} from '../shared/utils';
-import {product} from './utils';
+import {loadData, product} from '../shared/utils';
 
 export type DataType = [string, number];
 

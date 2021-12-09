@@ -1,5 +1,4 @@
-import {sum} from '../2021/utils';
-import {loadData} from '../shared/utils';
+import {loadData, sum} from '../shared/utils';
 
 export type DataType = string;
 export type Room = [string, number, string];

@@ -1,5 +1,4 @@
-import {loadData} from '../shared/utils';
-import {sum} from './utils';
+import {loadData, sum} from '../shared/utils';
 
 export type DataType = number;
 

@@ -1,4 +1,5 @@
 import {loadData} from '../shared/utils';
+import assert from 'assert';
 
 export type DataType = {patterns: Array<string>; output: Array<string>};
 
@@ -68,44 +69,33 @@ export const findValidMapping = (patterns: Array<string>): null | string => {
   let mapping = new Array(7).fill('').map(() => '');
 
   const str1 = patterns.find(p => p.length === 2);
-  if (str1 == null) {
-    return null;
-  }
+  assert(str1);
+
   const str4 = patterns.find(p => p.length === 4);
-  if (str4 == null) {
-    return null;
-  }
+  assert(str4);
+
   const str7 = patterns.find(p => p.length === 3);
-  if (str7 == null) {
-    return null;
-  }
+  assert(str7);
+
   const str6 = patterns.find(
     p => p.length === 6 && str7.split('').some(c => !p.includes(c))
   );
-  if (str6 == null) {
-    return null;
-  }
+  assert(str6);
+
   const str0 = patterns.find(
     p =>
       p.length === 6 && p !== str6 && str4.split('').some(c => !p.includes(c))
   );
-  if (str0 == null) {
-    return null;
-  }
+  assert(str0);
+
   const str8 = patterns.find(p => p.length === 7);
-  if (str8 == null) {
-    return null;
-  }
+  assert(str8);
   const str9 = patterns.find(p => p.length === 6 && p !== str6 && p !== str0);
-  if (str9 == null) {
-    return null;
-  }
+  assert(str9);
   const str3 = patterns.find(
     p => p.length === 5 && str1.split('').every(c => p.includes(c))
   );
-  if (str3 == null) {
-    return null;
-  }
+  assert(str3);
 
   mapping[0] = unique(str7, str1);
   mapping[1] = unique(str9, str3);

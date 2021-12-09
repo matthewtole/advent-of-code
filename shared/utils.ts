@@ -1,4 +1,5 @@
 import {argv} from 'process';
+import chalk from 'chalk';
 import * as fs from 'fs';
 
 /**
@@ -57,3 +58,17 @@ export async function execute(days: (() => Promise<void>)[]) {
     }
   }
 }
+
+export function runWithPerf<T>(fn: (data: T) => any, data: T): string {
+  const before = performance.now();
+  const res1 = fn(data);
+  return `${chalk.yellow(res1)} [${chalk.cyanBright(
+    (performance.now() - before).toPrecision(2)
+  )}ms]`;
+}
+
+export const sum = (nums: Array<number>) =>
+  nums.reduce((total, num) => total + num, 0);
+
+export const product = (nums: Array<number>) =>
+  nums.reduce((total, num) => total * num, 1);
