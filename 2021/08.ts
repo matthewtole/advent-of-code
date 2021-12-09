@@ -107,12 +107,12 @@ export const findValidMapping = (patterns: Array<string>): null | string => {
     return null;
   }
 
-  mapping[0] = unique(str7, str1); // a
-  mapping[1] = unique(str9, str3); // b
-  mapping[2] = unique(str8, str6); // c
-  mapping[3] = unique(str8, str0); // d
-  mapping[4] = unique(str8, str9); // e
-  mapping[5] = unique(str1, mapping[2]); // f
+  mapping[0] = unique(str7, str1);
+  mapping[1] = unique(str9, str3);
+  mapping[2] = unique(str8, str6);
+  mapping[3] = unique(str8, str0);
+  mapping[4] = unique(str8, str9);
+  mapping[5] = unique(str1, mapping[2]);
   mapping[6] = unique(SEGMENTS.join(''), mapping.join(''));
 
   return mapping.join('');
