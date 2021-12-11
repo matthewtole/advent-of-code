@@ -2,7 +2,7 @@
   "name": "advent-of-code",
   "version": "1.0.0",
   "description": "My solutions for The Advent of Code",
-  "main": "2020/index.ts",
+  "main": "2021/index.ts",
   "private": true,
   "scripts": {
     "2015": "ts-node 2015/index.ts",
