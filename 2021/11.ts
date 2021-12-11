@@ -20,7 +20,7 @@ const NEIGHBORS = [
   [1, 1],
 ];
 
-const flash = (data: Array<DataType>, col: number, row: number): number => {
+const flash = (data: Array<DataType>, col: number, row: number): void => {
   data[row][col] = 10;
   NEIGHBORS.forEach(([c, r]) => {
     if (data[row + r]?.[col + c] == null) {
@@ -34,7 +34,8 @@ const flash = (data: Array<DataType>, col: number, row: number): number => {
   });
 };
 
-export const step = (data: Array<DataType>): number => {
+const step = (_data: Array<DataType>): Array<DataType> => {
+  const data = [..._data.map(line => [...line])];
   for (let row = 0; row < data.length; row += 1) {
     for (let col = 0; col < data[row].length; col += 1) {
       if (data[row][col] === 9) {
@@ -44,36 +45,52 @@ export const step = (data: Array<DataType>): number => {
       }
     }
   }
-  let flashes = 0;
+  return data;
+};
+
+const countFlashes = (data: Array<DataType>): number => {
+  const flashes = data.reduce(
+    (flashes, line) =>
+      line.reduce(
+        (flashes, octopus) => flashes + (octopus === 0 ? 1 : 0),
+        flashes
+      ),
+    0
+  );
+  return flashes;
+};
+
+const reset = (_data: Array<DataType>): Array<DataType> => {
+  const data = [..._data.map(line => [...line])];
   for (let row = 0; row < data.length; row += 1) {
     for (let col = 0; col < data[row].length; col += 1) {
       if (data[row][col] >= 10) {
-        flashes++;
         data[row][col] = 0;
       }
     }
   }
-  return flashes;
+  return data;
 };
 
 export const part1 = (data: Array<DataType>): number => {
-  const clonedData = [...data.map(line => [...line])];
+  let clonedData = data;
   let flashes = 0;
   for (let c = 0; c < 100; c += 1) {
-    flashes += step(clonedData);
+    clonedData = reset(step(clonedData));
+    flashes += countFlashes(clonedData);
   }
 
   return flashes;
 };
 
 export const part2 = (data: Array<DataType>): number => {
-  const clonedData = [...data.map(line => [...line])];
+  let clonedData = data;
   let steps = 0;
   while (steps < 100000) {
     if (clonedData.every(row => row.every(o => o === 0))) {
       return steps;
     }
-    step(clonedData);
+    clonedData = reset(step(clonedData));
     steps += 1;
   }
   return -1;
