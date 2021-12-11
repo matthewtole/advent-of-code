@@ -7,7 +7,7 @@ import {
   part1,
   part2,
   sortPattern,
-} from './08';
+} from '../08';
 
 describe('Day 7', () => {
   const testData =

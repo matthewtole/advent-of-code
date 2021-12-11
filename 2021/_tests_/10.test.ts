@@ -3,7 +3,7 @@ import {
   getMissingCharacters,
   part1,
   part2,
-} from './10';
+} from '../10';
 
 describe('Day 9', () => {
   const testData = [
