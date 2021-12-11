@@ -18,6 +18,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 8   | :star: :star: | [2021/08.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/08.ts) |
 | 9   | :star: :star: | [2021/09.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/09.ts) |
 | 10  | :star: :star: | [2021/10.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/10.ts) |
+| 11  | :star: :star: | [2021/11.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/11.ts) |
 
 ## 2020
 
