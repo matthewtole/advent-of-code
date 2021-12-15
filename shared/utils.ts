@@ -72,3 +72,12 @@ export const sum = (nums: Array<number>) =>
 
 export const product = (nums: Array<number>) =>
   nums.reduce((total, num) => total * num, 1);
+
+export const countCharacters = (str: string): Record<string, number> => {
+  return str
+    .split('')
+    .reduce(
+      (count, char) => ({...count, [char]: (count[char] ?? 0) + 1}),
+      {} as Record<string, number>
+    );
+};
