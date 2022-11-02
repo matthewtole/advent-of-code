@@ -11,6 +11,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 
 <details>
 <summary><h2>2021 (22/50 :star:)</h2></summary>
+
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
 | 1   | :star: :star: | [2021/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/01.ts) |
@@ -28,6 +29,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 
 <details>
 <summary><h2>2020 (18/50 :star:)</h2></summary>
+
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
 | 1   | :star: :star: | [2020/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/01.ts) |
@@ -43,6 +45,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 
 <details>
 <summary><h2>2019 (22/50 :star:)</h2></summary>
+
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
 | 1   | :star: :star: | [2019/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/01.ts) |
@@ -60,6 +63,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 
 <details>
 <summary><h2>2016 (12/50 :star:)</h2></summary>
+
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
 | 1   | :star: :star: | [2016/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2016/01.ts) |
@@ -72,6 +76,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 
 <details>
 <summary><h2>2015 (32/50 :star:)</h2></summary>
+
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
 | 1   | :star: :star: | [2015/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2015/01.ts) |
