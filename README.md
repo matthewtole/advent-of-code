@@ -25,6 +25,10 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 9   | :star: :star: | [2021/09.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/09.ts) |
 | 10  | :star: :star: | [2021/10.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/10.ts) |
 | 11  | :star: :star: | [2021/11.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/11.ts) |
+| 12  |
+| 13  |
+| 14  | :star:        | [2021/14.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/14.ts) |
+
 </details>
 
 <details>
@@ -41,6 +45,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 7   | :star: :star: | [2020/07.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/07.ts) |
 | 8   | :star: :star: | [2020/08.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/08.ts) |
 | 9   | :star: :star: | [2020/09.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/09.ts) |
+
 </details>
 
 <details>
@@ -59,6 +64,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 9   | :star: :star: | [2019/09.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/09.ts) |
 | 10  | :star: :star: | [2019/10.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/10.ts) |
 | 11  | :star: :star: | [2019/11.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/11.ts) |
+
 </details>
 
 <details>
@@ -72,6 +78,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 4   | :star: :star: | [2016/04.ts](https://github.com/matthewtole/advent-of-code/blob/main/2016/04.ts) |
 | 5   | :star: :star: | [2016/05.ts](https://github.com/matthewtole/advent-of-code/blob/main/2016/05.ts) |
 | 6   | :star: :star: | [2016/06.ts](https://github.com/matthewtole/advent-of-code/blob/main/2016/06.ts) |
+
 </details>
 
 <details>
@@ -97,4 +104,5 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 16  | :star: :star: | [2015/16.ts](https://github.com/matthewtole/advent-of-code/blob/main/2015/16.ts) |
 | 17  | :star: :star: | [2015/17.ts](https://github.com/matthewtole/advent-of-code/blob/main/2015/18.ts) |
 | 18  | :star: :star: | [2015/18.ts](https://github.com/matthewtole/advent-of-code/blob/main/2015/18.ts) |
+
 </details>
