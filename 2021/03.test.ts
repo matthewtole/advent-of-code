@@ -1,4 +1,4 @@
-import {part1, part2} from '../03';
+import {part1, part2} from './03';
 
 describe('Day 3', () => {
   const testData = [

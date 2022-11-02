@@ -1,4 +1,4 @@
-import {getBasin, part1, part2} from '../09';
+import {getBasin, part1, part2} from './09';
 
 describe('Day 9', () => {
   const testData = [

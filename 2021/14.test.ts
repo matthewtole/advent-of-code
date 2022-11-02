@@ -1,4 +1,4 @@
-import {part1, part2, DataType, step} from '../14';
+import {part1, part2, DataType, step} from './14';
 
 describe('Day 14', () => {
   const testData: DataType = [
