@@ -9,7 +9,8 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | Day | Solved? | Solution |
 | --- | ------- | -------- |
 
-## 2021
+<details>
+<summary><h2>2021</h2></summary>
 
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
@@ -24,6 +25,8 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 9   | :star: :star: | [2021/09.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/09.ts) |
 | 10  | :star: :star: | [2021/10.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/10.ts) |
 | 11  | :star: :star: | [2021/11.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/11.ts) |
+
+</summary>
 
 ## 2020
 
