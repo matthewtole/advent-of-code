@@ -2,7 +2,7 @@
 
 These are my solutions for the [Advent of Code](https://adventofcode.com/).
 
-![Tests](https://img.shields.io/github/checks-status/matthewtole/advent-of-code/main?label=tests&style=for-the-badge) [![Codecov](https://img.shields.io/codecov/c/github/matthewtole/advent-of-code?style=for-the-badge)](https://codecov.io/gh/matthewtole/advent-of-code)
+[![Tests](https://img.shields.io/github/checks-status/matthewtole/advent-of-code/main?label=tests&style=for-the-badge)](https://github.com/matthewtole/advent-of-code/actions/workflows/tests.yml) [![Codecov](https://img.shields.io/codecov/c/github/matthewtole/advent-of-code?style=for-the-badge)](https://codecov.io/gh/matthewtole/advent-of-code)
 
 ## 2022
 
