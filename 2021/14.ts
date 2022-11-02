@@ -36,9 +36,9 @@ export const part1 = ([input, rules]: DataType): number => {
 
 export const part2 = ([input, rules]: DataType): number => {
   let polymer = input;
-  // for (let index = 0; index < 40; index++) {
-  //   polymer = step(polymer, rules);
-  // }
+  for (let index = 0; index < 40; index++) {
+    polymer = step(polymer, rules);
+  }
   const counts = countCharacters(polymer);
   const sortedCounts = Object.values(counts).sort((a, b) => b - a);
   return sortedCounts[0] - sortedCounts[sortedCounts.length - 1];
