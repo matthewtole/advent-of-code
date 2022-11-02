@@ -79,11 +79,11 @@ const days = [
     console.log('Part 2:', runWithPerf(part2, data));
   },
   async () => {
-    // const {parse, part1, part2} = await import('./11');
-    // const data = await parse();
+    const {parse, part1, part2} = await import('./12');
+    const data = await parse();
     console.log(' - DAY 12 - ');
-    // console.log('Part 1:', runWithPerf(part1, data));
-    // console.log('Part 2:', runWithPerf(part2, data));
+    console.log('Part 1:', runWithPerf(part1, data));
+    console.log('Part 2:', runWithPerf(part2, data));
   },
   async () => {
     // const {parse, part1, part2} = await import('./11');

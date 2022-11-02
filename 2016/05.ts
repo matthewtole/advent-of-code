@@ -1,4 +1,4 @@
-import {createHash} from 'crypto';
+import SparkMD5 from 'spark-md5';
 
 export type DataType = string;
 
@@ -7,9 +7,9 @@ export const part1 = (data: DataType): string => {
   let index = 0;
   let hash = '';
   while (password.length < 8) {
-    hash = createHash('md5').update(`${data}${index}`).digest('hex');
+    hash = SparkMD5.hash(`${data}${index}`);
     if (hash.startsWith('00000')) {
-      password += hash.substr(5, 1);
+      password += hash.substring(5, 6);
     }
     index += 1;
   }
@@ -21,10 +21,10 @@ export const part2 = (data: DataType): string => {
   let index = 0;
   let hash = '';
   while (!password.every(p => p !== '')) {
-    hash = createHash('md5').update(`${data}${index}`).digest('hex');
-    const position = Number(hash.substr(5, 1));
+    hash = SparkMD5.hash(`${data}${index}`);
+    const position = Number(hash.substring(5, 6));
     if (hash.startsWith('00000') && position < 8 && password[position] === '') {
-      password[position] = hash.substr(6, 1);
+      password[position] = hash.substring(6, 7);
     }
     index += 1;
   }
