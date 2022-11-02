@@ -26,9 +26,10 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 10  | :star: :star: | [2021/10.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/10.ts) |
 | 11  | :star: :star: | [2021/11.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/11.ts) |
 
-</summary>
+</details>
 
-## 2020
+<details>
+<summary><h2>2020</h2></summary>
 
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
@@ -42,7 +43,10 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 8   | :star: :star: | [2020/08.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/08.ts) |
 | 9   | :star: :star: | [2020/09.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/09.ts) |
 
-## 2019
+</details>
+
+<details>
+<summary><h2>2019</h2></summary>
 
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
@@ -58,7 +62,10 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 10  | :star: :star: | [2019/10.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/10.ts) |
 | 11  | :star: :star: | [2019/11.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/11.ts) |
 
-## 2016
+</details>
+
+<details>
+<summary><h2>2016</h2></summary>
 
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
@@ -69,7 +76,10 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 5   | :star: :star: | [2016/05.ts](https://github.com/matthewtole/advent-of-code/blob/main/2016/05.ts) |
 | 6   | :star: :star: | [2016/06.ts](https://github.com/matthewtole/advent-of-code/blob/main/2016/06.ts) |
 
-## 2015
+</details>
+
+<details>
+<summary><h2>2015</h2></summary>
 
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
@@ -91,3 +101,5 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 16  | :star: :star: | [2015/16.ts](https://github.com/matthewtole/advent-of-code/blob/main/2015/16.ts) |
 | 17  | :star: :star: | [2015/17.ts](https://github.com/matthewtole/advent-of-code/blob/main/2015/18.ts) |
 | 18  | :star: :star: | [2015/18.ts](https://github.com/matthewtole/advent-of-code/blob/main/2015/18.ts) |
+
+</details>
