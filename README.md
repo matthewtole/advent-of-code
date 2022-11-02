@@ -10,7 +10,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | --- | ------- | -------- |
 
 <details>
-<summary><h2>2021 (22/50 :star:)</h2></summary>
+<summary><h2>2021 (24/50 :star:)</h2></summary>
 
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
@@ -25,14 +25,14 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 9   | :star: :star: | [2021/09.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/09.ts) |
 | 10  | :star: :star: | [2021/10.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/10.ts) |
 | 11  | :star: :star: | [2021/11.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/11.ts) |
-| 12  |
+| 12  | :star:        |
 | 13  |
 | 14  | :star:        | [2021/14.ts](https://github.com/matthewtole/advent-of-code/blob/main/2021/14.ts) |
 
 </details>
 
 <details>
-<summary><h2>2020 (18/50 :star:)</h2></summary>
+<summary><h2>2020 (19/50 :star:)</h2></summary>
 
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
@@ -45,11 +45,12 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 7   | :star: :star: | [2020/07.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/07.ts) |
 | 8   | :star: :star: | [2020/08.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/08.ts) |
 | 9   | :star: :star: | [2020/09.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/09.ts) |
+| 10  | :star:        | [2020/10.ts](https://github.com/matthewtole/advent-of-code/blob/main/2020/10.ts) |
 
 </details>
 
 <details>
-<summary><h2>2019 (22/50 :star:)</h2></summary>
+<summary><h2>2019 (25/50 :star:)</h2></summary>
 
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
@@ -64,6 +65,11 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 9   | :star: :star: | [2019/09.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/09.ts) |
 | 10  | :star: :star: | [2019/10.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/10.ts) |
 | 11  | :star: :star: | [2019/11.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/11.ts) |
+| 12  | :star:        | [2019/12.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/12.ts) |
+| 13  | :star:        | [2019/13.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/13.ts) |
+| 14  |
+| 15  |
+| 16  | :star:        | [2019/16.ts](https://github.com/matthewtole/advent-of-code/blob/main/2019/16.ts) |
 
 </details>
 
