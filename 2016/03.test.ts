@@ -1,4 +1,4 @@
-import {convertData, isValidTriangle, part1, part2} from '../03';
+import {convertData, isValidTriangle, part1, part2} from './03';
 
 describe('Day 03', () => {
   test('isValidTriangle', () => {

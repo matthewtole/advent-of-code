@@ -1,4 +1,4 @@
-import {part1, part2} from '../05';
+import {part1, part2} from './05';
 
 describe.skip('Day 05', () => {
   test('Part 1', () => {

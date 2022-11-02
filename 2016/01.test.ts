@@ -1,4 +1,4 @@
-import {part1, part2} from '../01';
+import {part1, part2} from './01';
 
 describe('Day 01', () => {
   test('Part 1', () => {

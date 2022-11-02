@@ -1,4 +1,4 @@
-import {part1, isRealRoom, decryptRoom} from '../04';
+import {part1, isRealRoom, decryptRoom} from './04';
 
 describe('Day 04', () => {
   test('isRealRoom', () => {
