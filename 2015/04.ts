@@ -1,14 +1,9 @@
-import {createHash} from 'crypto';
+import {hash} from 'spark-md5';
 
 export const part1 = (input: string): number => {
   let number = 1;
   while (true) {
-    if (
-      createHash('md5')
-        .update(`${input}${number}`)
-        .digest('hex')
-        .startsWith('00000')
-    ) {
+    if (hash(`${input}${number}`).startsWith('00000')) {
       return number;
     }
     number++;
@@ -19,12 +14,7 @@ export const part1 = (input: string): number => {
 export const part2 = (input: string): number => {
   let number = 1;
   while (true) {
-    if (
-      createHash('md5')
-        .update(`${input}${number}`)
-        .digest('hex')
-        .startsWith('000000')
-    ) {
+    if (hash(`${input}${number}`).startsWith('000000')) {
       return number;
     }
     number++;
