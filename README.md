@@ -1,8 +1,8 @@
-![Advent of Code](https://repository-images.githubusercontent.com/317645101/e6fd6838-227f-4728-8bfd-2bb53e1cc5b3)
+![Advent of Code](https://repository-images.githubusercontent.com/317645101/436e8f27-e2b1-49af-84ed-f3f90cb6fb48)
 
 These are my solutions for the [Advent of Code](https://adventofcode.com/).
 
-![Tests](https://img.shields.io/github/checks-status/matthewtole/advent-of-code/main?label=tests&style=for-the-badge) [![Codecov](https://img.shields.io/codecov/c/github/matthewtole/advent-of-code?style=for-the-badge)](https://codecov.io/gh/matthewtole/advent-of-code)
+[![Tests](https://img.shields.io/github/checks-status/matthewtole/advent-of-code/main?label=tests&style=for-the-badge)](https://github.com/matthewtole/advent-of-code/actions/workflows/tests.yml) [![Codecov](https://img.shields.io/codecov/c/github/matthewtole/advent-of-code?style=for-the-badge)](https://codecov.io/gh/matthewtole/advent-of-code)
 
 ## 2022
 
