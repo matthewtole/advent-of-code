@@ -70,6 +70,12 @@ export function runWithPerf<T>(fn: (data: T) => any, data: T): string {
 export const sum = (nums: Array<number>) =>
   nums.reduce((total, num) => total + num, 0);
 
+export const max = (nums: Array<number>) =>
+  nums.reduce((max, num) => Math.max(max, num), 0);
+
+export const min = (nums: Array<number>) =>
+  nums.reduce((min, num) => Math.min(min, num), Number.MAX_SAFE_INTEGER);
+
 export const product = (nums: Array<number>) =>
   nums.reduce((total, num) => total * num, 1);
 
