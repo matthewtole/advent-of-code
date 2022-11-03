@@ -8,9 +8,11 @@ describe('Day 08', () => {
     .split('\n')
     .map(row => parseData(row.trim()));
 
-  test(`parseData`, () => {
-    expect(data[0]).toEqual(['b', 5, 'a', '>', 1]);
-    expect(data[2]).toEqual(['c', 10, 'a', '>=', 1]);
+  test.each([
+    [0, ['b', 5, 'a', '>', 1]],
+    [2, ['c', 10, 'a', '>=', 1]],
+  ])(`parseData(data[%i])`, (row, expected) => {
+    expect(data[row]).toEqual(expected);
   });
 
   test('Part 1', () => {
