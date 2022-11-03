@@ -80,6 +80,9 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | --- | ------------- | -------------------------------------------------------------------------------- |
 | 1   | :star: :star: | [2017/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2017/01.ts) |
 | 2   | :star: :star: | [2017/02.ts](https://github.com/matthewtole/advent-of-code/blob/main/2017/02.ts) |
+| 3   |
+| 4   | :star: :star: | [2017/04.ts](https://github.com/matthewtole/advent-of-code/blob/main/2017/04.ts) |
+| 5   | :star: :star: | [2017/05.ts](https://github.com/matthewtole/advent-of-code/blob/main/2017/05.ts) |
 
 </details>
 
