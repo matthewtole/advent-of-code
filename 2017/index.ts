@@ -15,6 +15,14 @@ const days = [
     console.log('Part 1:', runWithPerf(part1, data));
     console.log('Part 2:', runWithPerf(part2, data));
   },
+  async () => {},
+  async () => {
+    const {parse, part1, part2} = await import('./04');
+    const data = await parse();
+    console.log(' - DAY 04 - ');
+    console.log('Part 1:', runWithPerf(part1, data));
+    console.log('Part 2:', runWithPerf(part2, data));
+  },
 ];
 
 execute(days).then();
