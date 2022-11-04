@@ -6,6 +6,7 @@ export const parseData = (row: string): DataType => {
   const extracted = /^([a-z]+)\s\(([0-9]+)\)(\s->\s(([a-z]+)(,\s)?)*)?/.exec(
     row
   );
+  /* istanbul ignore next */
   if (extracted == null) {
     throw new Error('Failed to extract data from row');
   }
@@ -32,6 +33,7 @@ export const part1 = (data: Array<DataType>): string => {
       return name;
     }
   }
+  /* istanbul ignore next */
   throw new Error('Root not found :(');
 };
 

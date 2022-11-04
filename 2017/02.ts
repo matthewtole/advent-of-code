@@ -23,6 +23,7 @@ export const part2 = (data: Array<DataType>): number => {
           }
         }
       }
+      /* istanbul ignore next */
       throw new Error(`No match found on row ${index}`);
     })
   );

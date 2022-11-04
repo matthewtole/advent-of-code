@@ -47,6 +47,7 @@ export function permute<T>(permutation: Array<T>): Array<Array<T>> {
   return result;
 }
 
+/* istanbul ignore next */
 export async function execute(days: (() => Promise<void>)[]) {
   const day = argv[2] ? parseInt(argv[2]) : 0;
   if (day > 0) {
@@ -59,6 +60,7 @@ export async function execute(days: (() => Promise<void>)[]) {
   }
 }
 
+/* istanbul ignore next */
 export function runWithPerf<T>(fn: (data: T) => any, data: T): string {
   const before = performance.now();
   const res1 = fn(data);
