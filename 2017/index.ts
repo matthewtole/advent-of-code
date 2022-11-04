@@ -32,7 +32,12 @@ const days = [
     console.log('Part 1:', runWithPerf(part1, await parse()));
     console.log('Part 2:', runWithPerf(part2, await parse()));
   },
-  async () => {},
+  async () => {
+    const {parse, part1, part2} = await import('./07');
+    console.log(' - DAY 7 - ');
+    console.log('Part 1:', runWithPerf(part1, await parse()));
+    console.log('Part 2:', runWithPerf(part2, await parse()));
+  },
   async () => {
     const {parse, part1, part2} = await import('./08');
     console.log(' - DAY 8 - ');
