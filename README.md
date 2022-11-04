@@ -74,7 +74,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 </details>
 
 <details>
-<summary><h2>2017 (10/50 :star:)</h2></summary>
+<summary><h2>2017 (13/50 :star:)</h2></summary>
 
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
@@ -84,7 +84,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 4   | :star: :star: | [2017/04.ts](https://github.com/matthewtole/advent-of-code/blob/main/2017/04.ts) |
 | 5   | :star: :star: | [2017/05.ts](https://github.com/matthewtole/advent-of-code/blob/main/2017/05.ts) |
 | 6   | :star: :star: | [2017/06.ts](https://github.com/matthewtole/advent-of-code/blob/main/2017/06.ts) |
-| 7   |
+| 7   | :star:        | [2017/07.ts](https://github.com/matthewtole/advent-of-code/blob/main/2017/07.ts) |
 | 8   | :star: :star: | [2017/08.ts](https://github.com/matthewtole/advent-of-code/blob/main/2017/08.ts) |
 
 </details>
