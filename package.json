@@ -1,6 +1,6 @@
 {
   "name": "advent-of-code",
-  "version": "2022.1.0",
+  "version": "2022.1.1",
   "description": "My solutions for The Advent of Code",
   "main": "2022/index.ts",
   "private": true,

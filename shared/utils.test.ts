@@ -1,4 +1,12 @@
-import {countCharacters, loadData, max, min, product, sum} from './utils';
+import {
+  countCharacters,
+  loadData,
+  max,
+  min,
+  product,
+  sortNumbers,
+  sum,
+} from './utils';
 
 describe('#loadData', () => {
   test('loads data file for a given year and puzzle', async () => {
@@ -48,4 +56,11 @@ describe('#loadData', () => {
   ])('countCharacters', (str, counts) => {
     expect(countCharacters(str)).toEqual(counts);
   });
+});
+
+test.each([
+  [[3, 1, 2], true, [3, 2, 1]],
+  [[3, 1, 2], false, [1, 2, 3]],
+])('sortNumbers', (input, descending, output) => {
+  expect(sortNumbers(input, descending)).toEqual(output);
 });
