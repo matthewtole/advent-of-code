@@ -8,6 +8,7 @@ export const part1 = (input: string): number => {
     }
     number++;
   }
+  /* istanbul ignore next */
   return -1;
 };
 
@@ -19,5 +20,6 @@ export const part2 = (input: string): number => {
     }
     number++;
   }
+  /* istanbul ignore next */
   return -1;
 };

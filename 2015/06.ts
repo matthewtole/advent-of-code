@@ -13,6 +13,7 @@ function updateLights<T>(
     const res = /^([a-z\ ]+)\ (\d+),(\d+)\ through (\d+),(\d+)$/.exec(
       instruction
     );
+    /* istanbul ignore next */
     if (!res) {
       return;
     }
