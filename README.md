@@ -6,8 +6,9 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 
 ## 2022
 
-| Day | Solved? | Solution |
-| --- | ------- | -------- |
+| Day | Solved?       | Solution                                                                         |
+| --- | ------------- | -------------------------------------------------------------------------------- |
+| 1   | :star: :star: | [2021/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2022/01.ts) |
 
 <details>
 <summary><h2>2021 (24/50 :star:)</h2></summary>
