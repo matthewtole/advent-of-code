@@ -8,7 +8,8 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 
 | Day | Solved?       | Solution                                                                         |
 | --- | ------------- | -------------------------------------------------------------------------------- |
-| 1   | :star: :star: | [2021/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2022/01.ts) |
+| 1   | :star: :star: | [2022/01.ts](https://github.com/matthewtole/advent-of-code/blob/main/2022/01.ts) |
+| 2   | :star: :star: | [2022/02.ts](https://github.com/matthewtole/advent-of-code/blob/main/2022/02.ts) |
 
 <details>
 <summary><h2>2021 (24/50 :star:)</h2></summary>
