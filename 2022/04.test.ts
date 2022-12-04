@@ -1,7 +1,7 @@
-import {part1, part2} from './04';
+import {DataType, part1, part2} from './04';
 
 describe('Day 04', () => {
-  const data = [
+  const data: Array<DataType> = [
     [
       [2, 4],
       [6, 8],
