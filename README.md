@@ -13,6 +13,7 @@ These are my solutions for the [Advent of Code](https://adventofcode.com/).
 | 3   | :star: :star: | [2022/03.ts](https://github.com/matthewtole/advent-of-code/blob/main/2022/03.ts) |
 | 4   | :star: :star: | [2022/04.ts](https://github.com/matthewtole/advent-of-code/blob/main/2022/04.ts) |
 | 5   | :star: :star: | [2022/05.ts](https://github.com/matthewtole/advent-of-code/blob/main/2022/05.ts) |
+| 6   | :star: :star: | [2022/06.ts](https://github.com/matthewtole/advent-of-code/blob/main/2022/06.ts) |
 
 <details>
 <summary><h2>2021 (24/50 :star:)</h2></summary>
